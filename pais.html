@@ -1,433 +1,1371 @@
 <main id="secao-destinos">
   <div class="cards">
 
-    <div class="card" data-bandeira="🇧🇷">  <!-- Brasil -->
+    <!-- Brasil -->
+    <div class="card" data-bandeira="🇧🇷">
       <img src="imagens/pais/brasil.png" alt="Brasil">
-      <h3>Brasil</h3>
+      <h3 data-i18n="label_pais">Brasil</h3>
       <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> América do Sul</p>
-      <p><strong>Pratos típicos:</strong> Feijoada, Coxinha, Pão de Açúcar</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('brasil');">Me aventurar</button>
+      <p>
+        <strong data-i18n="label_regiao">Região:</strong> 
+        <span data-i18n="label_continente">América do Sul</span>
+      </p>
+      <p>
+        <strong data-i18n="label_tipicos">Pratos típicos:</strong> 
+        <span data-i18n="label_comidas">Feijoada, Coxinha, Pão de Açúcar</span>
+      </p>
+    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('brasil')" data-i18n="btn_me_aventurar">Me aventurar</button>
   </div>
   </div>
 
-    <div class="card" data-bandeira="🇯🇵">  <!-- Japão -->
+    <!-- Japão -->
+    <div class="card" data-bandeira="🇯🇵">
       <img src="imagens/pais/japao.png" alt="Japão">
-      <h3>Japão</h3>
+      <h3 data-i18n="label_pais">Japão</h3>
       <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> Ásia</p>
-      <p><strong>Pratos típicos:</strong> Sushi, Ramen, Tempura</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('japao')">Me aventurar</button>
+      <p>
+        <strong data-i18n="label_regiao">Região:</strong> 
+        <span data-i18n="label_continente"> Ásia</span>
+      </p>
+      <p>
+        <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+        <span data-i18n="label_comidas">Sushi, Ramen, Tempura</span>
+      </p>
+    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('japao')" data-i18n="btn_me_aventurar">Me aventurar</button>
   </div>
   </div>
 
-    <div class="card" data-bandeira="🇨🇴">  <!-- Colômbia -->
+    <!-- Colômbia -->
+    <div class="card" data-bandeira="🇨🇴">
       <img src="imagens/pais/colombia.png" alt="Colômbia">
-      <h3>Colômbia</h3>
+      <h3 data-i18n="label_pais">Colômbia</h3>
       <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> América do Sul</p>
-      <p><strong>Pratos típicos:</strong> Arepa, Bandeja Paisa, Empanada</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('colombia')">Me aventurar</button>
+      <p>
+        <strong data-i18n="label_regiao">Região:</strong>
+        <span data-i18n="label_continente"> América do Sul</span>
+      </p>
+      <p>
+        <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+        <span data-i18n="label_comidas">Arepa, Bandeja Paisa, Empanada</span>
+      </p>
+    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('colombia')" data-i18n="btn_me_aventurar">Me aventurar</button>
   </div>
   </div>
 
-  <div class="card" data-bandeira="�🇸">  <!-- EUA -->
-      <img src="imagens/pais/eua.png" alt="EUA">
-      <h3>EUA</h3>
-      <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> América do Norte</p>
-      <p><strong>Pratos típicos:</strong> Hambúrguer, Hot Dog, Apple Pie</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('eua')">Me aventurar</button>
-  </div>
-  </div>
+  <!-- EUA -->
+  <div class="card" data-bandeira="�🇸"> 
+    <img src="imagens/pais/eua.png" alt="EUA">
+    <h3 data-i18n="label_pais">EUA</h3>
+    <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
+    <p>
+      <strong data-i18n="label_regiao">Região:</strong>
+      <span data-i18n="label_continente">América do Norte</span>
+    </p>
+    <p>
+      <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+      <span data-i18n="label_comidas">Hambúrguer, Hot Dog, Apple Pie</span>
+    </p>
+  <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('eua')" data-i18n="btn_me_aventurar">Me aventurar</button>
+</div>
+</div>
 
-    <div class="card" data-bandeira="�🇸">  <!-- Austrália -->
-      <img src="imagens/pais/australia.png" alt="Austrália">
-      <h3>Austrália</h3>
-      <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> Oceania</p>
-      <p><strong>Pratos típicos:</strong> Kangaroo, Meat Pie, Tim Tams</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('australia')">Me aventurar</button>
-  </div>
-  </div>
+<!-- Austrália -->
+<div class="card" data-bandeira="�🇸">  
+  <img src="imagens/pais/australia.png" alt="Austrália">
+  <h3 data-i18n="label_pais">Austrália</h3>
+  <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
+  <p>
+    <strong data-i18n="label-regiao">Região:</strong>
+    <span data-i18n="label_continente">Oceania</span>
+  </p>
+  <p>
+    <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+    <span data-i18n="label_comidas">Kangaroo, Meat Pie, Tim Tams</span>
+  </p>
+<button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('australia')" data-i18n="btn_me_aventurar">Me aventurar</button>
+</div>
+</div>
 
-    <div class="card" data-bandeira="�🇸">  <!-- FRANÇA -->
-      <img src="imagens/pais/franca.png" alt="França">
-      <h3>França</h3>
-      <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> Europa</p>
-      <p><strong>Pratos típicos:</strong> Croissant, Coq au Vin, Ratatouille</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('franca')">Me aventurar</button>
-  </div>
-  </div>
-  
+<!-- FRANÇA -->
+<div class="card" data-bandeira="�🇸">  
+  <img src="imagens/pais/franca.png" alt="França">
+  <h3 data-i18n="label_pais">França</h3>
+  <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
+  <p>
+    <strong data-i18n="label_regiao">Região:</strong>
+    <span data-i18n="label_continente">Europa</span>
+  </p>
+  <p>
+    <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+    <span data-i18n="label_comidas">Croissant, Coq au Vin, Ratatouille</span></p>
+<button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('franca')" data-i18n="btn_me_aventurar">Me aventurar</button>
+</div>
+</div>
 
-    <div class="card" data-bandeira="�🇸">  <!-- EGITO -->
-      <img src="imagens/pais/egito.png" alt="Egito">
-      <h3>Egito</h3>
-      <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> África</p>
-      <p><strong>Pratos típicos:</strong> Ful Medames, Koshari, Taamiya</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('egito')">Me aventurar</button>
-  </div>
-  </div>
+<!-- EGITO -->
+<div class="card" data-bandeira="�🇸">  
+  <img src="imagens/pais/egito.png" alt="Egito">
+  <h3 data-i18n="label_pais">Egito</h3>
+  <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
+  <p>
+    <strong data-i18n="label_regiao">Região:</strong>
+    <span data-i18n="label_continente">África</span>
+  </p>
+  <p>
+    <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+    <span data-i18n="label_comidas">Ful Medames, Koshari, Taamiya</span>
+  </p>
+<button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('egito')" data-i18n="btn_me_aventurar">Me aventurar</button>
+</div>
+</div>
 
-  <div class="card" data-bandeira="�🇸">  <!-- COREIA DO SUL -->
-      <img src="imagens/pais/coreia-do-sul.png" alt="Coreia do Sul">
-      <h3>Coreia do Sul</h3>
-      <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> Ásia</p>
-      <p><strong>Pratos típicos:</strong> Kimchi, Bibimbap, Bulgogi</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('coreia-do-sul')">Me aventurar</button>
-  </div>
-  </div>
+<!-- COREIA DO SUL -->
+<div class="card" data-bandeira="�🇸">  
+  <img src="imagens/pais/coreia-do-sul.png" alt="Coreia do Sul">
+  <h3 data-i18n="label_pais">Coreia do Sul</h3>
+  <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
+  <p>
+    <strong data-i18n="label_regiao">Região:</strong>
+    <span data-i18n="label_continente">Ásia</span>
+  </p>
+  <p>
+    <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+    <span data-i18n="label_comidas">Kimchi, Bibimbap, Bulgogi</span>
+  </p>
+<button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('coreia-do-sul')" data-i18n="btn_me_aventurar">Me aventurar</button>
+</div>
+</div>
 
-  <div class="card" data-bandeira="�🇸">  <!-- INDIA -->
-      <img src="imagens/pais/india.png" alt="India">
-      <h3>India</h3>
-      <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> Ásia</p>
-      <p><strong>Pratos típicos:</strong> Biryani, Curry, Naan</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('india')">Me aventurar</button>
-  </div>
-  </div>
+<!-- INDIA -->
+<div class="card" data-bandeira="�🇸">  
+  <img src="imagens/pais/india.png" alt="India">
+  <h3 data-i18n="label_pais">India</h3>
+  <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
+  <p>
+    <strong data-i18n="label-regiao">Região:</strong>
+    <span data-i18n="label_continente">Ásia</span>
+  </p>
+  <p>
+    <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+    <span data-i18n="label_comidas">Biryani, Curry, Naan</span>
+  </p>
+<button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('india')" data-i18n="btn_me_aventurar">Me aventurar</button>
+</div>
+</div>
 
-  <div class="card" data-bandeira="�🇸">  <!-- Nova Zelândia -->
-      <img src="imagens/pais/nova-zelandia.png" alt="Nova Zelândia">
-      <h3>Nova Zelândia</h3>
-      <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-      <p><strong>Região:</strong> Oceania</p>
-      <p><strong>Pratos típicos:</strong> Pavlova, Hangi, Silver Fern</p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('india')">Me aventurar</button>
-  </div>
-  </div>
+<!-- Nova Zelândia -->
+<div class="card" data-bandeira="�🇸"> 
+  <img src="imagens/pais/nova-zelandia.png" alt="Nova Zelândia">
+  <h3 data-i18n="label_pais">Nova Zelândia</h3>
+  <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
+  <p>
+    <strong data-i18n="label_regiao">Região:</strong>
+    <span data-i18n="label_continente">Oceania</span>
+  </p>
+  <p>
+    <strong data-i18n="label_tipicos">Pratos típicos:</strong>
+    <span data-i18n="label_comidas">Pavlova, Hangi, Silver Fern</span>
+  </p>
+<button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('india')" data-i18n="btn_me_aventurar">Me aventurar</button>
+</div>
+</div>
 
   </div>
 </main>
 
 <!-- MODAIS -->
 
+<!-- Brasil -->
 <div id="modal-brasil" class="modal">
   <div class="modal-conteudo">
-    <h2 class="modal-titulo">Brasil</h2>
+    <h2 class="modal-titulo" data-i18n="br_titulo">Brasil</h2>
     
     <button id="btn-audio-brasil" class="botao-audio" onclick="toggleNarracao('brasil')">
       <span class="icone">🔊</span>
-      <span class="texto">Ouvir</span>
+      <span class="texto" data-i18n="btn_ouvir">Ouvir</span>
     </button>
           
-    <h3 class="modal-subtitulo">Dados gerais</h3>
+    <h3 class="modal-subtitulo" data-i18n="sub_dados">Dados gerais</h3>
     <div class="modal-bloco">
       <img src="imagens/pais/brasil.png" alt="Brasil" class="modal-img-direita">
-      <p class="modal-texto">Localizado na América do Sul, o Brasil é o maior país do continente e o quinto maior do mundo em extensão territorial. Tem mais de 200 milhões de habitantes e sua capital é Brasília. O país é conhecido pela grande diversidade cultural, pela riqueza natural, pelas praias, florestas, festas populares e pela mistura de influências indígenas, africanas e europeias. Sua economia é uma das maiores da América Latina, com destaque para a agropecuária, a indústria, o turismo e os serviços.</p>
+      <p class="modal-texto" data-i18n="br-dados">Localizado na América do Sul, o Brasil é o maior país do continente e o quinto maior do mundo em extensão territorial. Tem mais de 200 milhões de habitantes e sua capital é Brasília. O país é conhecido pela grande diversidade cultural, pela riqueza natural, pelas praias, florestas, festas populares e pela mistura de influências indígenas, africanas e europeias. Sua economia é uma das maiores da América Latina, com destaque para a agropecuária, a indústria, o turismo e os serviços.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Ponto turístico: Cristo Redentor</h3>
+    <h3 class="modal-subtitulo" data-i18n="br_cristo_sub">Ponto turístico: Cristo Redentor</h3>
     <div class="modal-bloco">
       <img src="imagens/ponto-turistico/cristo-redentor.png" alt="Cristo Redentor" class="modal-img-esquerda">
-      <p class="modal-texto">É um dos símbolos mais famosos do Brasil. Localizado no topo do morro do Corcovado, no Rio de Janeiro, o monumento tem vista panorâmica da cidade e é um dos pontos turísticos mais visitados do país. Além da importância turística, representa também a fé e a identidade cultural brasileira.</p>
+      <p class="modal-texto" data-i18n="br_cristo_txt">É um dos símbolos mais famosos do Brasil. Localizado no topo do morro do Corcovado, no Rio de Janeiro, o monumento tem vista panorâmica da cidade e é um dos pontos turísticos mais visitados do país. Além da importância turística, representa também a fé e a identidade cultural brasileira.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Culinária: Feijoada</h3>
+    <h3 class="modal-subtitulo" data-i18n="br_feij_sub">Culinária: Feijoada</h3>
     <div class="modal-bloco">
       <img src="imagens/receita/feijoada.png" alt="Feijoada" class="modal-img-direita">
-      <p class="modal-texto">A feijoada é um dos pratos mais tradicionais da culinária brasileira. Feita com feijão-preto e diferentes carnes, costuma ser servida com arroz, couve, farofa e laranja. É um prato muito associado à cultura popular e aos encontros em família, especialmente aos fins de semana.</p>
+      <p class="modal-texto" data-i18n="br_feij_txt">A feijoada é um dos pratos mais tradicionais da culinária brasileira. Feita com feijão-preto e diferentes carnes, costuma ser servida com arroz, couve, farofa e laranja. É um prato muito associado à cultura popular e aos encontros em família, especialmente aos fins de semana.</p>
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('brasil')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('brasil')">← Voltar</button>
+      <button class="botao" onclick="verReceitas('brasil')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
+      <button class="botao" onclick="fecharModal('brasil')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
 </div>
 
+<!-- Japão -->
 <div id="modal-japao" class="modal">
   <div class="modal-conteudo">
-    <h2 class="modal-titulo">Japão</h2>
+    <h2 class="modal-titulo" data-i18n="jp_titulo">Japão</h2>
 
-    <h3 class="modal-subtitulo">Dados gerais</h3>
+    <h3 class="modal-subtitulo" data-i18n="sub_dados">Dados gerais</h3>
     <div class="modal-bloco">
       <img src="imagens/pais/japao.png" alt="Japão" class="modal-img-direita">
-      <p class="modal-texto">Localizado no leste da Ásia, o Japão é um arquipélago desenvolvido e montanhoso com cerca de 126 milhões de habitantes. Tóquio é a capital e maior cidade, compondo a área metropolitana mais populosa do mundo. É uma monarquia constitucional, potência industrial focada em tecnologia e robótica, conhecida pela alta expectativa de vida e rica cultura, mesclando tradições milenares com a modernidade.</p>
+      <p class="modal-texto" data-i18n="jp_dados_txt">Localizado no leste da Ásia, o Japão é um arquipélago desenvolvido e montanhoso com cerca de 126 milhões de habitantes. Tóquio é a capital e maior cidade, compondo a área metropolitana mais populosa do mundo. É uma monarquia constitucional, potência industrial focada em tecnologia e robótica, conhecida pela alta expectativa de vida e rica cultura, mesclando tradições milenares com a modernidade.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Ponto turístico: Monte Fuji</h3>
+    <h3 class="modal-subtitulo" data-i18n="jp_fuji_sub">Ponto turístico: Monte Fuji</h3>
     <div class="modal-bloco">
       <img src="imagens/ponto-turistico/monte-fuji.png" alt="Monte Fuji" class="modal-img-esquerda">
-      <p class="modal-texto">O Monte Fuji é o pico mais alto e um dos símbolos mais icônicos do Japão. Localizado na ilha de Honshu, próximo a Tóquio, é um vulcão ativo, mas adormecido. É um local de grande beleza, atração turística para escaladas no verão e, historicamente, um lugar de adoração sagrada.</p>
+      <p class="modal-texto" data-i18n="jp_fuji_txt">O Monte Fuji é o pico mais alto e um dos símbolos mais icônicos do Japão. Localizado na ilha de Honshu, próximo a Tóquio, é um vulcão ativo, mas adormecido. É um local de grande beleza, atração turística para escaladas no verão e, historicamente, um lugar de adoração sagrada.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Culinária: Takoyaki</h3>
+    <h3 class="modal-subtitulo" data-i18n="jp_tako_sub">Culinária: Takoyaki</h3>
     <div class="modal-bloco">
       <img src="imagens/receita/takoyaki.png" alt="Takoyaki" class="modal-img-direita">
-      <p class="modal-texto">Takoyaki é um popular petisco japonês em formato de bolinhas, crocante por fora e macio por dentro, recheado com pedaços de polvo, gengibre e cebolinha. Originário de Osaka, é grelhado em chapas especiais e finalizado com molho takoyaki, maionese, aonori e katsuobushi.</p>
+      <p class="modal-texto" data-i18n="jp_tako_txt">Takoyaki é um popular petisco japonês em formato de bolinhas, crocante por fora e macio por dentro, recheado com pedaços de polvo, gengibre e cebolinha. Originário de Osaka, é grelhado em chapas especiais e finalizado com molho takoyaki, maionese, aonori e katsuobushi.</p>
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('japao')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('japao')">← Voltar</button>
+      <button class="botao" onclick="verReceitas('japao')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
+      <button class="botao" onclick="fecharModal('japao')" data-i18n="btn-voltar">← Voltar</button>
     </div>
   </div>
 </div>
 
+<!-- Colômbia -->
 <div id="modal-colombia" class="modal">
-    <div class="modal-conteudo">
-    <h2 class="modal-titulo">Colômbia</h2>
-    <h3 class="modal-subtitulo">Dados gerais</h3>
-    <div class="modal-bloco">
-      <img src="imagens/dados-gerais/colombia_gerais.png" alt="Colômbia" class="modal-img-direita">
-      <p class="modal-texto" data-i18n="cl_dados_txt">A Colômbia é um país localizado no noroeste da América do Sul, conhecido por sua grande diversidade cultural, natural e gastronômica. Sua capital é Bogotá, um importante centro econômico, político e cultural do país.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_cart_sub">Ponto turístico: Cartagena</h3>
-    <div class="modal-bloco">
-      <img src="imagens/ponto-turistico/cartagena.png" alt="Cartagena" class="modal-img-esquerda">
-      <p class="modal-texto" data-i18n="cl_col_txt">O território colombiano possui paisagens muito variadas, que incluem praias no Mar do Caribe, montanhas da Cordilheira dos Andes, florestas tropicais e cidades cheias de história. Além disso, o país é mundialmente conhecido pela produção de café de alta qualidade, considerado um dos melhores do mundo.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_cult_sub">Cultura - Melhor época para viajar para a Colômbia</h3>
-    <div class="modal-bloco">
-      <img src="imagens/festa/festa-colombia.png" alt="Festa Colômbia" class="modal-img-direita">
-      <p class="modal-texto" data-i18n="cl_colo_txt">A Colômbia pode ser visitada em qualquer época do ano, pois possui clima tropical com temperaturas relativamente estáveis. No entanto, algumas épocas podem ser mais vantajosas! Sendo as principais épocas para festas: Fevereiro (Carnaval de Barranquilla) e Agosto (Feira das Flores em Medellín).</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_culi_sub">Culinária da Colômbia</h3>
-    <div class="modal-bloco">
-      <img src="imagens/receita/bandeja-paisa.png" alt="Bandeja Paisa" class="modal-img-esquerda">
-      <p class="modal-texto" data-i18n="cl_culi_txt">A culinária colombiana é resultado da mistura de culturas indígenas, espanholas e africanas. Os pratos costumam usar ingredientes como milho, arroz, feijão, carnes, batata, banana-da-terra e frutas tropicais. Entre as comidas mais conhecidas estão: Bandeja Paisa, Arepas e Ajiaco.</p>
-    </div>
-    <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('colombia')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('colombia')">← Voltar</button>
-    </div>
+  <div class="modal-conteudo">
+  <h2 class="modal-titulo" data-i18n="cl_titulo">Colômbia</h2>
+  <h3 class="modal-subtitulo" data-i18n="sub_dados">Dados gerais</h3>
+  <div class="modal-bloco">
+    <img src="imagens/dados-gerais/colombia_gerais.png" alt="Colômbia" class="modal-img-direita">
+    <p class="modal-texto" data-i18n="cl_dados_txt">A Colômbia é um país localizado no noroeste da América do Sul, conhecido por sua grande diversidade cultural, natural e gastronômica. Sua capital é Bogotá, um importante centro econômico, político e cultural do país.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="cl_cart_sub">Ponto turístico: Cartagena</h3>
+  <div class="modal-bloco">
+    <img src="imagens/ponto-turistico/cartagena.png" alt="Cartagena" class="modal-img-esquerda">
+    <p class="modal-texto" data-i18n="cl_col_txt">O território colombiano possui paisagens muito variadas, que incluem praias no Mar do Caribe, montanhas da Cordilheira dos Andes, florestas tropicais e cidades cheias de história. Além disso, o país é mundialmente conhecido pela produção de café de alta qualidade, considerado um dos melhores do mundo.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="cl_cult_sub">Cultura - Melhor época para viajar para a Colômbia</h3>
+  <div class="modal-bloco">
+    <img src="imagens/festa/festa-colombia.png" alt="Festa Colômbia" class="modal-img-direita">
+    <p class="modal-texto" data-i18n="cl_colo_txt">A Colômbia pode ser visitada em qualquer época do ano, pois possui clima tropical com temperaturas relativamente estáveis. No entanto, algumas épocas podem ser mais vantajosas! Sendo as principais épocas para festas: Fevereiro (Carnaval de Barranquilla) e Agosto (Feira das Flores em Medellín).</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="cl_culi_sub">Culinária da Colômbia</h3>
+  <div class="modal-bloco">
+    <img src="imagens/receita/bandeja-paisa.png" alt="Bandeja Paisa" class="modal-img-esquerda">
+    <p class="modal-texto" data-i18n="cl_culi_txt">A culinária colombiana é resultado da mistura de culturas indígenas, espanholas e africanas. Os pratos costumam usar ingredientes como milho, arroz, feijão, carnes, batata, banana-da-terra e frutas tropicais. Entre as comidas mais conhecidas estão: Bandeja Paisa, Arepas e Ajiaco.</p>
+  </div>
+  <div class="modal-voltar">
+    <button class="botao" onclick="verReceitas('colombia')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
+    <button class="botao" onclick="fecharModal('colombia')" data-i18n="btn_voltar">← Voltar</button>
   </div>
 </div>
+</div>
 
+<!-- Estados Unidos -->
 <div id="modal-eua" class="modal">
-    <div class="modal-conteudo">
-    <h2 class="modal-titulo">Estados Unidos</h2>
-    <h3 class="modal-subtitulo">Dados gerais</h3>
-    <div class="modal-bloco">
-      <img src="imagens/dados-gerais/eua_gerais.png" alt="Estados Unidos" class="modal-img-direita">
-      <p class="modal-texto" data-i18n="cl_dados_txt">Os Estados Unidos estão localizados na América do Norte e são uma das maiores potências econômicas e culturais do mundo.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_cart_sub">Ponto turístico: Estátua da Liberdade</h3>
-    <div class="modal-bloco">
-      <img src="imagens/ponto-turistico/estatua-liberdade.png" alt="Estátua da Liberdade" class="modal-img-esquerda">
-      <p class="modal-texto" data-i18n="cl_col_txt">Localizada em Nova York, é um símbolo de liberdade e um dos monumentos mais famosos do mundo.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_cult_sub">Cultura - Melhor época para viajar para a EUA</h3>
-    <div class="modal-bloco">
-      <img src="imagens/festa-eua.png" alt="Festa EUA" class="modal-img-direita">
-      <p class="modal-texto" data-i18n="cl_colo_txt">A Colômbia pode ser visitada em qualquer época do ano, pois possui clima tropical com temperaturas relativamente estáveis. No entanto, algumas épocas podem ser mais vantajosas! Sendo as principais épocas para festas: Fevereiro (Carnaval de Barranquilla) e Agosto (Feira das Flores em Medellín).</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_culi_sub">Culinária dos EUA</h3>
-    <div class="modal-bloco">
-      <img src="imagens/receita/hamburguer.png" alt="Hambúrguer" class="modal-img-esquerda">
-      <p class="modal-texto" data-i18n="cl_culi_txt">A culinária dos EUA é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. nos EUA é um ícone cultural, variando entre fast-food clássico e opções gourmets.</p>
-    </div>
-    <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('eua')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('eua')">← Voltar</button>
-    </div>
+  <div class="modal-conteudo">
+  <h2 class="modal-titulo" data-i18n="eua_titulo">Estados Unidos</h2>
+  <h3 class="modal-subtitulo" data-i18n="sub-dados">Dados gerais</h3>
+  <div class="modal-bloco">
+    <img src="imagens/dados-gerais/eua_gerais.png" alt="Estados Unidos" class="modal-img-direita">
+    <p class="modal-texto" data-i18n="eua_dados_txt">Os Estados Unidos estão localizados na América do Norte, e têm como capital Washington, D.C. O país utiliza o inglês como principal idioma e o dólar como moeda oficial. Com cerca de 330 milhões de habitantes, destaca-se como uma das nações mais populosas e influentes do mundo.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="eua_est_sub">Ponto turístico: Estátua da Liberdade</h3>
+  <div class="modal-bloco">
+    <img src="imagens/ponto-turistico/estatua-liberdade.png" alt="Estátua da Liberdade" class="modal-img-esquerda">
+    <p class="modal-texto" data-i18n="eua_est_txt">Inaugurada em 1886, foi um presente da França e simboliza liberdade e democracia. Está localizada em Nova York, sendo um dos pontos turísticos mais famosos do mundo.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="eua_cult_sub">Cultura</h3>
+  <div class="modal-bloco">
+    <img src="imagens/festa-eua.png" alt="Festa EUA" class="modal-img-direita">
+    <p class="modal-texto" data-i18n="eua_cult_txt">Os Estados Unidos possuem uma cultura diversa, formada pela mistura de diferentes povos e tradições do mundo todo. O país é uma grande influência global em áreas como música, cinema e tecnologia, além de valorizar o individualismo, a inovação e o entretenimento.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="eua_culi_sub">Culinária dos EUA</h3>
+  <div class="modal-bloco">
+    <img src="imagens/receita/hamburguer.png" alt="Hambúrguer" class="modal-img-esquerda">
+    <p class="modal-texto" data-i18n="eua_culi_txt">A culinária dos EUA é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. nos EUA é um ícone cultural, variando entre fast-food clássico e opções gourmets.</p>
+  </div>
+  <div class="modal-voltar">
+    <button class="botao" onclick="verReceitas('eua')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+    <button class="botao" onclick="fecharModal('eua')" data-i18n="btn_voltar">← Voltar</button>
   </div>
 </div>
+</div>
 
+<!-- Austrália -->
 <div id="modal-australia" class="modal">
-    <div class="modal-conteudo">
-    <h2 class="modal-titulo">Austrália</h2>
-    <h3 class="modal-subtitulo">Dados gerais</h3>
-    <div class="modal-bloco">
-      <img src="imagens/dados-gerais/australia_gerais.png" alt="Austrália" class="modal-img-direita">
-      <p class="modal-texto" data-i18n="cl_dados_txt">A Austrália é um país da Oceania conhecido por sua fauna única e belas paisagens naturais. dimensões continentais, conhecido por sua mistura única de natureza selvagem e modernidade urbana.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_cart_sub">Ponto turístico: Ópera de Sydney</h3>
-    <div class="modal-bloco">
-      <img src="imagens/ponto-turistico/sydney-opera.png" alt="Ópera de Sydney" class="modal-img-esquerda">
-      <p class="modal-texto" data-i18n="cl_col_txt">Um dos edifícios mais famosos do mundo.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_cult_sub">Cultura - Melhor época para viajar para a Austrália</h3>
-    <div class="modal-bloco">
-      <img src="imagens/festa-australia.png" alt="Festa Austrália" class="modal-img-direita">
-      <p class="modal-texto" data-i18n="cl_colo_txt">A Colômbia pode ser visitada em qualquer época do ano, pois possui clima tropical com temperaturas relativamente estáveis. No entanto, algumas épocas podem ser mais vantajosas! Sendo as principais épocas para festas: Fevereiro (Carnaval de Barranquilla) e Agosto (Feira das Flores em Medellín).</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_culi_sub">Culinária da Austrália</h3>
-    <div class="modal-bloco">
-      <img src="imagens/receita/meat-pie.png" alt="Hambúrguer" class="modal-img-esquerda">
-      <p class="modal-texto" data-i18n="cl_culi_txt">A culinária da Austrália é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. na Austrália é um ícone cultural, variando entre fast-food clássico e opções gourmets.</p>
-    </div>
-    <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('australia')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('australia')">← Voltar</button>
-    </div>
+  <div class="modal-conteudo">
+  <h2 class="modal-titulo" data-i18n="aus_tiulo">Austrália</h2>
+  <h3 class="modal-subtitulo" data-i18n="sub_dados">Dados gerais</h3>
+  <div class="modal-bloco">
+    <img src="imagens/dados-gerais/australia_gerais.png" alt="Austrália" class="modal-img-direita">
+    <p class="modal-texto" data-i18n="aus_dados_txt">A Austrália está localizada na Oceania e tem como capital Canberra. O país ocupa praticamente todo um continente, sendo conhecido por sua biodiversidade única e paisagens naturais impressionantes. O idioma oficial é o inglês e a moeda é o dólar australiano. Com cerca de 26 milhões de habitantes, a população se concentra principalmente nas áreas costeiras, e o país apresenta alto índice de qualidade de vida. Como suas estações são invertidas em relação ao Brasil, o melhor período para viajar é entre março e maio e de setembro a novembro, quando o clima está equilibrado.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="aus_syd_sub">Ponto turístico: Ópera de Sydney</h3>
+  <div class="modal-bloco">
+    <img src="imagens/ponto-turistico/sydney-opera.png" alt="Ópera de Sydney" class="modal-img-esquerda">
+    <p class="modal-texto" data-i18n="aus_syd_txt">Inaugurada em 1973, é um dos edifícios mais icônicos do mundo, famoso por sua arquitetura moderna em formato de “velas”. Projetada pelo arquiteto dinamarquês Jørn Utzon, tornou-se um símbolo da Austrália e um importante centro cultural para apresentações de ópera, teatro e música.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="aus_cult_sub">Cultura</h3>
+  <div class="modal-bloco">
+    <img src="imagens/festa-australia.png" alt="Festa Austrália" class="modal-img-direita">
+    <p class="modal-texto" data-i18n="aus_cult_txt">A cultura australiana é formada pela união das tradições dos povos aborígenes com a influência britânica. Os australianos valorizam um estilo de vida descontraído, com forte ligação com a natureza, praias e esportes ao ar livre. A sociedade é multicultural e bastante receptiva a diferentes culturas.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="aus_culi_sub">Culinária da Austrália</h3>
+  <div class="modal-bloco">
+    <img src="imagens/receita/meat-pie.png" alt="Hambúrguer" class="modal-img-esquerda">
+    <p class="modal-texto" data-i18n="aus_culi_txt">A culinária da Austrália é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. na Austrália é um ícone cultural, variando entre fast-food clássico e opções gourmets.</p>
+  </div>
+  <div class="modal-voltar">
+    <button class="botao" onclick="verReceitas('australia')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+    <button class="botao" onclick="fecharModal('australia')" data-i18n="btn_voltar">← Voltar</button>
   </div>
 </div>
+</div>
 
+<!-- França -->
 <div id="modal-franca" class="modal">
-    <div class="modal-conteudo">
-    <h2 class="modal-titulo">França</h2>
-    <h3 class="modal-subtitulo">Dados gerais</h3>
-    <div class="modal-bloco">
-      <img src="imagens/dados-gerais/franca_gerais.png" alt="França" class="modal-img-direita">
-      <p class="modal-texto" data-i18n="cl_dados_txt">A França está localizada na Europa e é conhecida por sua cultura, história e gastronomia refinada.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_cart_sub">Ponto turístico: Torre Eiffel</h3>
-    <div class="modal-bloco">
-      <img src="imagens/ponto-turistico/torre-eiffel.png" alt="Torre Eiffel" class="modal-img-esquerda">
-      <p class="modal-texto" data-i18n="cl_col_txt">Um dos monumentos mais famosos do mundo, localizado em Paris.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_cult_sub">Cultura - Melhor época para viajar para a França</h3>
-    <div class="modal-bloco">
-      <img src="imagens/festa/festa-franca.png" alt="Festa França" class="modal-img-direita">
-      <p class="modal-texto" data-i18n="cl_colo_txt">A França pode ser visitada em qualquer época do ano, pois possui clima temperado com temperaturas relativamente estáveis. No entanto, algumas épocas podem ser mais vantajosas! Sendo as principais épocas para festas: Fevereiro (Carnaval de Barranquilla) e Agosto (Feira das Flores em Medellín).</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="cl_culi_sub">Culinária da França</h3>
-    <div class="modal-bloco">
-      <img src="imagens/receita/croissant.png" alt="Croissant" class="modal-img-esquerda">
-      <p class="modal-texto" data-i18n="cl_culi_txt">Um pão folhado típico, muito consumido no café da manhã.</p>
-    </div>
-    <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('franca')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('franca')">← Voltar</button>
-    </div>
+  <div class="modal-conteudo">
+  <h2 class="modal-titulo" data-i18n="fr_titulo">França</h2>
+  <h3 class="modal-subtitulo" data-i18n="sub_dados">Dados gerais</h3>
+  <div class="modal-bloco">
+    <img src="imagens/dados-gerais/franca_gerais.png" alt="França" class="modal-img-direita">
+    <p class="modal-texto" data-i18n="fr_dados_txt">A França está situada na Europa Ocidental e tem como capital Paris. O país possui grande importância histórica e cultural, sendo um dos destinos turísticos mais visitados do mundo, o país é ideal para visitação na primavera e no outono, entre abril e junho e de setembro a outubro, quando o clima é mais agradável e as cidades estão menos cheias. O idioma oficial é o francês e a moeda utilizada é o euro. Com aproximadamente 67 milhões de habitantes, a França se destaca por sua influência global nas áreas de arte, moda, gastronomia e política.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="fr_eif_sub">Ponto turístico: Torre Eiffel</h3>
+  <div class="modal-bloco">
+    <img src="imagens/ponto-turistico/torre-eiffel.png" alt="Torre Eiffel" class="modal-img-esquerda">
+    <p class="modal-texto" data-i18n="fr_par_txt">Construída em 1889 para a Exposição Universal de Paris, inicialmente foi criticada, mas se tornou um dos maiores símbolos da França e um dos monumentos mais visitados do mundo.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="fr_cult_sub">Cultura</h3>
+  <div class="modal-bloco">
+    <img src="imagens/festa/festa-franca.png" alt="Festa França" class="modal-img-direita">
+    <p class="modal-texto" data-i18n="fr_cult_txt">A França é referência mundial em arte, moda e gastronomia. O país valoriza a estética, a tradição e o estilo de vida refinado. Movimentos artísticos e intelectuais, como o Iluminismo, tiveram grande influência global, reforçando o papel da França na história cultural do mundo.</p>
+  </div>
+  <h3 class="modal-subtitulo" data-i18n="fr_culi_sub">Culinária da França</h3>
+  <div class="modal-bloco">
+    <img src="imagens/receita/croissant.png" alt="Croissant" class="modal-img-esquerda">
+    <p class="modal-texto" data-i18n="fr_culi_txt">Um pão folhado típico, muito consumido no café da manhã.</p>
+  </div>
+  <div class="modal-voltar">
+    <button class="botao" onclick="verReceitas('franca')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+    <button class="botao" onclick="fecharModal('franca')" data-i18n="btn_voltar">← Voltar</button>
   </div>
 </div>
+</div>
 
+<!-- Egito -->
 <div id="modal-egito" class="modal">
   <div class="modal-conteudo">
-    <h2 class="modal-titulo">Egito</h2>
+    <h2 class="modal-titulo" data-i18n="egp_titulo">Egito</h2>
 
-    <h3 class="modal-subtitulo">Dados gerais</h3>
+    <h3 class="modal-subtitulo" data-i18n="sub_dados">Dados gerais</h3>
     <div class="modal-bloco">
       <img src="imagens/pais/egito.png" alt="Egito" class="modal-img-direita">
-      <p class="modal-texto">O Egito está localizado no nordeste da África e é famoso por sua história antiga e civilização milenar.</p>
+      <p class="modal-texto" data-i18n="egp_dados_txt">O Egito está localizado no nordeste da África e tem como capital Cairo. O idioma oficial é o árabe e a moeda é a libra egípcia. Com mais de 100 milhões de habitantes, o país é conhecido por sua história milenar e grande importância no mundo antigo. Devido ao clima desértico, a melhor época para visitar é entre outubro e abril, quando o clima é mais ameno e as temperaturas estão mais suportáveis.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Ponto turístico: Pirâmides de Gizé</h3>
+    <h3 class="modal-subtitulo" data-i18n="egp_gize_sub">Ponto turístico: Pirâmides de Gizé</h3>
     <div class="modal-bloco">
       <img src="imagens/ponto-turistico/piramide-gize.png" alt="Pirâmides de Gizé" class="modal-img-esquerda">
-      <p class="modal-texto">As pirâmides de Gizé são um dos monumentos mais antigos e impressionantes do mundo. Localizadas no Egito, elas são um dos Sete Maravilhas do Mundo Antigo.</p>
+      <p class="modal-texto" data-i18n="epg_gize_txt">Construídas há mais de 4.500 anos, são uma das maiores realizações da engenharia da antiguidade e serviam como tumbas para os faraós.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Culinária: Koshari</h3>
+    <h3 class="modal-subtitulo" data-i18n="egp_culi_sub">Culinária: Koshari</h3>
     <div class="modal-bloco">
       <img src="imagens/receita/koshari.png" alt="Koshari" class="modal-img-direita">
-      <p class="modal-texto">Prato tradicional feito com arroz, macarrão e lentilhas.  é o prato nacional do Egito e uma das comidas de rua mais populares e amadas do país.</p>
+      <p class="modal-texto" data-i18n="egp_culi_txt">Prato tradicional feito com arroz, macarrão e lentilhas.  é o prato nacional do Egito e uma das comidas de rua mais populares e amadas do país.</p>
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('egito')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('egito')">← Voltar</button>
+      <button class="botao" onclick="verReceitas('egito')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+      <button class="botao" onclick="fecharModal('egito')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
 </div>
 
+<!-- Coreia do sul -->
 <div id="modal-coreia-do-sul" class="modal">
   <div class="modal-conteudo">
-    <h2 class="modal-titulo">Coreia do Sul</h2>
+    <h2 class="modal-titulo" data-i18n="cor_titulo">Coreia do Sul</h2>
 
-    <h3 class="modal-subtitulo">Dados gerais</h3>
+    <h3 class="modal-subtitulo" data-i18n="sub_dados">Dados gerais</h3>
     <div class="modal-bloco">
       <img src="imagens/dados-gerais/coreia-gerais.png" alt="Coreia do Sul" class="modal-img-direita">
-      <p class="modal-texto">Localizada no leste da Ásia, a Coreia do Sul é uma nação vibrante e
-      tecnologicamente avançada, com cerca de 51 milhões de habitantes. Seul é a
-      capital e o coração econômico, unindo arranha-céus modernos a palácios
-      antigos. É uma república democrática, líder global em eletrônicos e cultura pop
-      (K-pop), conhecida por sua disciplina, alta conectividade e culinária picante.</p>
+      <p class="modal-texto" data-i18n="cor_dados_txt">Localizada no leste da Ásia, a Coreia do Sul é uma nação vibrante e tecnologicamente avançada, com cerca de 51 milhões de habitantes. Seul é a capital e o coração econômico, unindo arranha-céus modernos a palácios antigos. É uma república democrática, líder global em eletrônicos e cultura pop       (K-pop), conhecida por sua disciplina, alta conectividade e culinária picante.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Ponto turístico: Palácio Gyeongbokgung</h3>
+    <h3 class="modal-subtitulo" data-i18n="cor_gyeo_sub">Ponto turístico: Palácio Gyeongbokgung</h3>
     <div class="modal-bloco">
       <img src="imagens/ponto-turistico/palácio-gyeongbokgung.png" alt="Palácio Gyeongbokgung" class="modal-img-esquerda">
-      <p class="modal-texto">É o maior e principal palácio real da dinastia Joseon, localizado em Seul. Com
-      sua arquitetura imponente e jardins vastos, é um símbolo da história coreana. É
-      comum ver turistas e locais vestindo Hanbok (roupa tradicional) para explorar
-      seus pavilhões e assistir à troca da guarda real.</p>
+      <p class="modal-texto" data-i18n="cor_gyeo_txt">É o maior e principal palácio real da dinastia Joseon, localizado em Seul. Com sua arquitetura imponente e jardins vastos, é um símbolo da história coreana. É comum ver turistas e locais vestindo Hanbok (roupa tradicional) para explorar seus pavilhões e assistir à troca da guarda real.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Culinária: Kimchi</h3>
+    <h3 class="modal-subtitulo" data-i18n="cor_culi_sub">Culinária: Kimchi</h3>
     <div class="modal-bloco">
       <img src="imagens/receita/kimchi.png" alt="Kimchi" class="modal-img-direita">
-      <p class="modal-texto">Kimchi é um alimento fermentado coreano, feito principalmente com repolho, cenoura e pimenta. É uma parte essencial da dieta coreana e é conhecido por seus benefícios para a saúde digestiva.</p>
+      <p class="modal-texto" data-i18n="cor_culi_txt">Kimchi é um alimento fermentado coreano, feito principalmente com repolho, cenoura e pimenta. É uma parte essencial da dieta coreana e é conhecido por seus benefícios para a saúde digestiva.</p>
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('coreia-do-sul')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('coreia-do-sul')">← Voltar</button>
+      <button class="botao" onclick="verReceitas('coreia-do-sul')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+      <button class="botao" onclick="fecharModal('coreia-do-sul')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
 </div>
 
+<!-- Índia -->
 <div id="modal-india" class="modal">
   <div class="modal-conteudo">
-    <h2 class="modal-titulo">Índia</h2>
+    <h2 class="modal-titulo" data-i18n="ind_titulo">Índia</h2>
 
-    <h3 class="modal-subtitulo">Dados gerais</h3>
+    <h3 class="modal-subtitulo" data-i18n="sub_dados">Dados gerais</h3>
     <div class="modal-bloco">
       <img src="imagens/dados-gerais/india-gerais.png" alt="India" class="modal-img-direita">
-      <p class="modal-texto">Localizada no sul da Ásia, a Índia é o país mais populoso do mundo, com mais
-        de 1,4 bilhão de habitantes. Nova Deli é a capital, enquanto Mumbai é o
-        principal centro financeiro. É uma democracia federal conhecida por sua
-        diversidade espiritual, festivais coloridos, indústria cinematográfica (Bollywood)
-        e uma economia em rápido crescimento tecnológico.</p>
+      <p class="modal-texto" data-i18n="ind_sub_txt">Localizada no sul da Ásia, a Índia é o país mais populoso do mundo, com mais de 1,4 bilhão de habitantes. Nova Deli é a capital, enquanto Mumbai é o principal centro financeiro. É uma democracia federal conhecida por sua diversidade espiritual, festivais coloridos, indústria cinematográfica (Bollywood) e uma economia em rápido crescimento tecnológico.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Ponto turístico: Taj Mahal</h3>
+    <h3 class="modal-subtitulo" data-i18n="ind_taj_sub">Ponto turístico: Taj Mahal</h3>
     <div class="modal-bloco">
       <img src="imagens/ponto-turistico/taj-mahal.png" alt="Taj Mahal" class="modal-img-esquerda">
-      <p class="modal-texto">Situado em Agra, este mausoléu de mármore branco é considerado a maior
-      prova de amor do mundo, construído pelo imperador Shah Jahan em memória
-      de sua esposa. É uma obra-prima da arquitetura mogol, reconhecida
-      mundialmente por sua simetria perfeita e detalhes em pedras semipreciosas.</p>
+      <p class="modal-texto" data-i18n="ind_taj_txt">Situado em Agra, este mausoléu de mármore branco é considerado a maior  prova de amor do mundo, construído pelo imperador Shah Jahan em memória de sua esposa. É uma obra-prima da arquitetura mogol, reconhecida mundialmente por sua simetria perfeita e detalhes em pedras semipreciosas.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Culinária: Frango Tikka Masala</h3>
+    <h3 class="modal-subtitulo" data-i18n="ind_culi_sub">Culinária: Frango Tikka Masala</h3>
     <div class="modal-bloco">
       <img src="imagens/receita/frango-tikka-masala.png" alt="Frango Tikka Masala" class="modal-img-direita">
-      <p class="modal-texto">Frango Tikka Masala é um prato indiano popular, feito com pedaços de frango grelhado em uma salsa cremosa e especiada. É conhecido por sua combinação de sabores picantes e ricos.</p>
+      <p class="modal-texto" data-i18n="ind_culi_txt">Frango Tikka Masala é um prato indiano popular, feito com pedaços de frango grelhado em uma salsa cremosa e especiada. É conhecido por sua combinação de sabores picantes e ricos.</p>
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('india')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('india')">← Voltar</button>
+      <button class="botao" onclick="verReceitas('india')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+      <button class="botao" onclick="fecharModal('india')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
 </div>
 
+<!-- Nova Zelândia -->
 <div id="modal-nova-zelandia" class="modal">
   <div class="modal-conteudo">
-    <h2 class="modal-titulo">Nova Zelândia</h2>
-    
-    <button id="btn-audio-nova-zelandia" class="botao-audio" onclick="toggleNarracao('nova-zelandia')">
-      <span class="icone">🔊</span>
-      <span class="texto">Ouvir</span>
-    </button>
+    <h2 class="modal-titulo" data-i18n="nvze_titulo">Nova Zelândia</h2>
           
-    <h3 class="modal-subtitulo">Dados gerais</h3>
+    <h3 class="modal-subtitulo" data-i18n="sub-dados">Dados gerais</h3>
     <div class="modal-bloco">
       <img src="imagens/dados-gerais/nova-zelândia-gerais.png" alt="Nova Zelândia" class="modal-img-direita">
-      <p class="modal-texto">Localizada no sudoeste do Oceano Pacífico, é um país insular desenvolvido
-      com cerca de 5 milhões de habitantes. Wellington é a capital e Auckland a maior
-      cidade. Conhecida por suas paisagens naturais deslumbrantes (montanhas,
-      fiordes e pastagens), é uma monarquia constitucional famosa pela cultura
-      Maori e por ser o cenário de grandes produções cinematográficas.</p>
+      <p class="modal-texto" data-i18n="nvze_sub_txt">Localizada no sudoeste do Oceano Pacífico, é um país insular desenvolvido com cerca de 5 milhões de habitantes. Wellington é a capital e Auckland a maior cidade. Conhecida por suas paisagens naturais deslumbrantes (montanhas, fiordes e pastagens), é uma monarquia constitucional famosa pela cultura Maori e por ser o cenário de grandes produções cinematográficas.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Ponto turístico: Milford Sound</h3>
+    <h3 class="modal-subtitulo" data-i18n="nvze_mil_sub">Ponto turístico: Milford Sound</h3>
     <div class="modal-bloco">
       <img src="imagens/ponto-turistico/milford-sound.png" alt="Milford Sound" class="modal-img-esquerda">
-      <p class="modal-texto">Localizado na Ilha do Sul, é um fiorde esculpido por geleiras, descrito por
-      Rudyard Kipling como a "oitava maravilha do mundo". É cercado por falésias
-      íngremes e cachoeiras que jorram centenas de metros abaixo, sendo o destino
-      principal para passeios de barco e amantes da natureza selvagem.</p>
+      <p class="modal-texto" data-i18n="nvze_mil_txt">Localizado na Ilha do Sul, é um fiorde esculpido por geleiras, descrito por Rudyard Kipling como a "oitava maravilha do mundo". É cercado por falésias íngremes e cachoeiras que jorram centenas de metros abaixo, sendo o destino principal para passeios de barco e amantes da natureza selvagem.</p>
     </div>
 
-    <h3 class="modal-subtitulo">Culinária: Pavlova</h3>
+    <h3 class="modal-subtitulo" data-i18n="nvze_culi_sub">Culinária: Pavlova</h3>
     <div class="modal-bloco">
       <img src="imagens/receita/pavlova.png" alt="Pavlova" class="modal-img-direita">
-      <p class="modal-texto">A Pavlova é um doce australiano/novozelandês, feito com meringue recheado com creme de leite e frutas frescas. É conhecida por sua textura crocante por fora e macia por dentro, sendo um prato popular em ocasiões especiais e festas.</p>
+      <p class="modal-texto" data-i18n="nvze_culi_txt">A Pavlova é um doce australiano/novozelandês, feito com meringue recheado com creme de leite e frutas frescas. É conhecida por sua textura crocante por fora e macia por dentro, sendo um prato popular em ocasiões especiais e festas.</p>
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('nova-zelandia')">🍽️ Ver receitas</button>
-      <button class="botao" onclick="fecharModal('nova-zelandia')">← Voltar</button>
+      <button class="botao" onclick="verReceitas('nova-zelandia')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+      <button class="botao" onclick="fecharModal('nova-zelandia')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
 </div>
+
+<script>
+  function abrirModal(pais) {
+  var modal = document.getElementById('modal-' + pais);
+  if (modal) {
+
+    
+    if (!modal.querySelector('header')) {
+      var headerOriginal = document.querySelector('header');
+      var headerClone = headerOriginal.cloneNode(true);
+      modal.insertBefore(headerClone, modal.firstChild);
+    }
+
+    modal.style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+}
+  var traducoesBrasil = {
+    pt: {
+      //card Brasil
+      label_pais: "Brasil",
+      label_regiao: "Região:",
+      label_continente: "América do Sul",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Feijoada, Coxinha, Pão de Açúcar",
+      btn_me_aventurar: "Me aventurar",
+      //modal Brasil 
+      br_titulo: "Brasil",
+      btn_ouvir: "Ouvir",
+      sub_dados: "Dados Gerais",
+      br_dados_txt: "O Brasil é o maior país da América do Sul e o quinto maior do mundo, com uma população de mais de 200 milhões de habitantes. Brasília é a capital federal, enquanto São Paulo é a maior cidade. É conhecido pela sua diversidade cultural, pela floresta amazônica e pelas praias paradisíacas.",
+      br_cristo_sub: "Ponto turístico: Cristo Redentor",
+      br_cristo_txt: "Um dos símbolos mais reconhecidos do mundo, localizado no topo do Morro do Corcovado no Rio de Janeiro, com 38 metros de altura. É uma das Sete Maravilhas do Mundo Moderno e recebe milhões de visitantes todos os anos.",
+      br_feij_sub: "Culinária: Feijoada",
+      br_feij_txt: "Prato nacional brasileiro, feito com feijão preto e diversos cortes de carne de porco, servido com arroz, couve refogada, farofa e laranja. Tradicional aos sábados, reúne família e amigos em torno da mesa.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+    en: {
+      //card Brasil
+      label_pais: "Brazil",
+      label_regiao: "Region",
+      label_continente: "South America",
+      label_tipicos: "Typical dishes",
+      label_comidas: "Feijoada, Coxinha, Pão de Açúcar",
+      btn_me_aventurar: "venture out",
+      //modal Brasil
+      br_titulo: "Brazil",
+      btn_ouvir: "Listen",
+      sub_dados: "General information",
+      br_dados_txt: "Brazil is the largest country in South America and the fifth largest in the world, with a population of over 200 million. Brasília is the federal capital, while São Paulo is the largest city. It is known for its cultural diversity, the Amazon rainforest, and its paradisiacal beaches.",
+      br_cristo_sub: "Tourist attraction: Christ the Redeemer",
+      br_cristo_txt: "One of the most recognized symbols in the world, located atop Corcovado Mountain in Rio de Janeiro, standing 38 meters tall. It is one of the Seven Wonders of the Modern World and receives millions of visitors every year.",
+      br_feij_sub: "Cuisine: Feijoada",
+      br_feij_txt: "A national Brazilian dish, made with black beans and various cuts of pork, served with rice, sautéed kale, farofa (toasted cassava flour), and orange. Traditionally eaten on Saturdays, it brings family and friends together around the table.",
+      btn_ver_receitas: "See recipes",
+      btn_voltar: "← Back"
+    },
+    es: {
+      //card Brasil
+      label_pais: "Brasil",
+      label_regiao: "Región",
+      label_continente: "Sudamerica",
+      label_tipicos: "Platos típicos:",
+      label_comidas: "Feijoada, Coxinha, Pão de Açúcar",
+      btn_me_aventurar: "Aventurarse",
+      //modal Brasil
+      br_titulo: "Brasil",
+      btn_ouvir: "Escuchar",
+      sub_dados: "Información General",
+      br_dados_txt: "Brasil es el país más grande de Sudamérica y el quinto más grande del mundo, con una población de más de 200 millones de habitantes. Brasilia es la capital federal, mientras que São Paulo es la ciudad más grande. Es conocido por su diversidad cultural, la selva amazónica y sus playas paradisíacas.",
+      br_cristo_sub: "Atracción turística: Cristo Redentor",
+      br_cristo_txt: "Uno de los símbolos más reconocibles del mundo, ubicado en la cima del monte Corcovado en Río de Janeiro, con 38 metros de altura. Es una de las Siete Maravillas del Mundo Moderno y recibe millones de visitantes cada año.",
+      br_feij_sub: "Cocina: Feijoada",
+      br_feij_txt: "Un plato típico brasileño, elaborado con frijoles negros y diversos cortes de cerdo, servido con arroz, col rizada salteada, farofa (harina de yuca tostada) y naranja. Tradicionalmente se consume los sábados y reúne a familiares y amigos alrededor de la mesa.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+
+  var traducoesJapao = {
+    pt: {
+      //card Japão
+      label_pais: "Japão",
+      label_regiao: "Região:",
+      label_continente: "Ásia",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Sushi, Ramen, Tempura",
+      btn_me_aventurar: "Me aventurar",
+      //modal Japão
+      jp_titulo: "Japão",
+      sub_dados: "Dados Gerais",
+      jp_dados_txt: "Localizado no leste da Ásia, o Japão é um arquipélago desenvolvido e montanhoso com cerca de 126 milhões de habitantes. Tóquio é a capital e maior cidade, compondo a área metropolitana mais populosa do mundo. É uma monarquia constitucional, potência industrial focada em tecnologia e robótica.",
+      jp_fuji_sub: "Ponto turístico: Monte Fuji",
+      jp_fuji_txt: "É o pico mais alto e um dos símbolos mais icônicos do Japão. Localizado na ilha de Honshu, próximo a Tóquio, é um vulcão ativo, mas adormecido. É um local de grande beleza, atração turística para escaladas no verão e historicamente um lugar de adoração sagrada.",
+      jp_tako_sub: "Culinária: Takoyaki",
+      jp_tako_txt: "Popular petisco japonês em formato de bolinhas, recheado com pedaços de polvo, gengibre e cebolinha. Originário de Osaka, é grelhado em chapas especiais, finalizado com molho takoyaki, maionese, aonori e katsuobushi.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+    en: {
+      //card Japão
+      label_pais: "Japan",
+      label_regiao: "Region",
+      label_continente: "Asia",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Sushi, Ramen, Tempura",
+      btn_me_aventurar: "Venture out",
+      //modal Japão
+      jp_titulo: "Japan",
+      sub_dados: "General Information",
+      jp_dados_txt: "Located in East Asia, Japan is a developed, mountainous archipelago with approximately 126 million inhabitants. Tokyo is the capital and largest city, comprising the most populous metropolitan area in the world. It is a constitutional monarchy, an industrial powerhouse focused on technology and robotics.",
+      jp_fuji_sub: "Tourist Landmark: Mount Fuji",
+      jp_fuji_txt: "It is the highest peak and one of the most iconic symbols of Japan. Located on the island of Honshu, near Tokyo, it is an active but dormant volcano. It is a place of great beauty, a tourist attraction for climbing in the summer and historically a place of sacred worship.",
+      jp_tako_sub: "Cuisine: Takoyaki",
+      jp_tako_txt: "A popular Japanese snack in the form of small balls, filled with pieces of octopus, ginger, and scallions. Originating in Osaka, it is grilled on special griddles and finished with takoyaki sauce, mayonnaise, aonori, and katsuobushi.",
+      btn_ver_receitas: "See recipes",
+      btn_voltar: "← Back"
+    },
+    es: {
+      //card Japão
+      label_pais: "Japón",
+      label_regiao: "Región",
+      label_continente: "Asia",
+      label_tipicos: "platos tipicos:",
+      label_comidas: "Sushi, Ramen, Tempura",
+      btn_me_aventurar: "Aventurarse",
+      //modal Japão
+      jp_titulo: "Japón",
+      sub_dados: "Información General",
+      jp_dados_txt: "Ubicado en el este de Asia, Japón es un archipiélago desarrollado y montañoso con aproximadamente 126 millones de habitantes. Tokio es la capital y la ciudad más grande, que comprende el área metropolitana más poblada del mundo. Es una monarquía constitucional, una potencia industrial centrada en la tecnología y la robótica.",
+      jp_fuji_sub: "Atracción turística: Monte Fuji",
+      jp_fuji_txt: "Es el pico más alto y uno de los símbolos más icónicos de Japón. Ubicado en la isla de Honshu, cerca de Tokio, es un volcán activo pero dormido. Es un lugar de gran belleza, atracción turística para escalar en verano e históricamente un lugar de adoración sagrada.",
+      jp_tako_sub: "Gastronomía: Takoyaki",
+      jp_tako_txt: "Un popular aperitivo japonés en forma de bolitas, relleno de trozos de pulpo, jengibre y cebolleta. Originario de Osaka, se asa en planchas especiales y se termina con salsa takoyaki, mayonesa, aonori y katsuobushi.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+  var traducoesColombia = {
+    pt: {
+      //card Colômbia
+      label_pais: "Colômbia",
+      label_regiao: "Região",
+      label_continente: "América do sul",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Arepa, Bandeja Paisa, Empanada",
+      btn_me_aventurar: "Me aventurar",
+      //modal Colômbia
+      cl_titulo: "Colômbia",
+      sub_dados: "Dados Gerais",
+      cl_dados_txt: "A Colômbia é um país localizado no noroeste da América do Sul, conhecido por sua grande diversidade cultural, natural e gastronômica. Sua capital é Bogotá, um importante centro econômico, político e cultural do país.",
+      cl_cart_sub: "Ponto turístico: Cartagena",
+      cl_col_txt: "O território colombiano possui paisagens muito variadas, que incluem praias no Mar do Caribe, montanhas da Cordilheira dos Andes, florestas tropicais e cidades cheias de história. Além disso, o país é mundialmente conhecido pela produção de café de alta qualidade, considerado um dos melhores do mundo.",
+      cl_cult_sub: "cultura - Melhor época para viajar para a Colômbia",
+      cl_colo_txt: "A Colômbia pode ser visitada em qualquer época do ano, pois possui clima tropical com temperaturas relativamente estáveis. No entanto, algumas épocas podem ser mais vantajosas! Sendo as principais épocas para festas: Fevereiro (Carnaval de Barranquilla) e Agosto (Feira das Flores em Medellín).",
+      cl_culi_sub: "Culinária da Colômbia",
+      cl_culi_txt: "A culinária colombiana é resultado da mistura de culturas indígenas, espanholas e africanas. Os pratos costumam usar ingredientes como milho, arroz, feijão, carnes, batata, banana-da-terra e frutas tropicais. Entre as comidas mais conhecidas estão: Bandeja Paisa, Arepas e Ajiaco.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+     },
+
+     en: {
+      //card Colômbia
+      label_pais: "Colombia",
+      label_regiao: "Region",
+      label_continente: "South America",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Arepa, Bandeja Paisa, Empanada",
+      btn_me_aventurar: "Venture out",
+      //modal Colômbia
+      cl_titulo: "Colombia",
+      sub_dados: "General Information",
+      cl_dados_txt: "Colombia is a country located in northwestern South America, known for its great cultural, natural and gastronomic diversity. Its capital is Bogota, an important economic, political and cultural center of the country.",
+      cl_cart_sub: "Tourist Landmark: Cartagena",
+      cl_col_txt: "Colombia boasts a diverse landscape, encopassing Caribbean beaches, the Andes Mountains, tropical rainforests and historic cities. Furthermore, the country is world renowned for its high-quality coffee production, considered among the best in the world",
+      cl_cult_sub: "culture - Best time to travel to Colombia",
+      cl_colo_txt: "Colombia can be visited at any time of year, as it has a tropical climate with relatively stable temperatures. However, some times of year may be more advantageous! The main times for festivities are: February (Carnival in Barranquilla) and August (Flower Festival in Medellin",
+      cl_culi_sub: "Colombian cuisine",
+      cl_culi_txt: "Colombian cuisine is the result of a blend of indigenous, Spanish, and African cultures. Dishes typically use ingredients such as corn, rice, beans, meats, potatoes, plantains, and tropical fruits. Among the best-known dishes are: Bandeja Paisa, Arepas, and Ajiaco.",
+      btn_ver_receitas: "See recipes",
+      btn_voltar: "← Back"
+     },
+
+     es: {
+      //card Colômbia
+      label_pais: "Colombia",
+      label_regiao: "Región",
+      label_continente: "Sudamerica",
+      label_tipicos: "Platos tipicos:",
+      label_comidas: "Arepa, Bandeja Paisa, Empanada",
+      btn_me_aventurar: "Aventurarse",
+      //modal Colômbia
+      cl_titulo: "Colombia",
+      sub_dados: "Información General",
+      cl_dados_txt: "Colombia es un país ubicado en el noroeste de Sudamérica, conocido por su gran diversidad cultural, natural y gastronómica. Su capital es Bogotá, un importante centro económico, político y cultural del país.",
+      cl_cart_sub: "Atractivo turístico: Cartagena",
+      cl_col_txt: "Colombia cuenta con un paisaje diverso que abarca playas en el mar Caribe, la cordillera de los Andes, selvas tropicales y ciudades con una rica historia. Además, el país es mundialmente conocido por su café de alta calidad, considerado uno de los mejores del mundo.",
+      cl_cult_sub: "Cultura - Mejor época para viajar a Colombia",
+      cl_colo_txt: "Colombia se puede visitar en cualquier época del año, ya que cuenta con un clima tropical con temperaturas relativamente estables. Sin embargo, ¡algunas épocas son más recomendables! Las principales temporadas de festivales son: febrero (Carnaval de Barranquilla) y agosto (Festival de las Flores de Medellín).", 
+      cl_culi_sub: "Cocina colombiana",
+      cl_culi_txt: "La gastronomía colombiana es el resultado de la fusión de las culturas indígena, española y africana. Sus platos suelen utilizar ingredientes como maíz, arroz, frijoles, carnes, papas, plátanos y frutas tropicales. Entre los platos más conocidos se encuentran la Bandeja Paisa, las Arepas y el Ajiaco.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+     }
+  };
+
+  var traducoesEUA = {
+    pt: {
+      //card EUA
+      label_pais: "EUA",
+      label_regiao: "Região",
+      label_continente: "América do Norte",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Hambúrguer, Hot Dog, Apple Pie",
+      btn_me_aventurar: "Me aventurar",
+      //modal EUA
+      eua_titulo: "Estados Unidos",
+      sub_dados: "Dados Gerais",
+      eua_dados_txt: "Os Estados Unidos estão localizados na América do Norte, e têm como capital Washington, D.C. O país utiliza o inglês como principal idioma e o dólar como moeda oficial. Com cerca de 330 milhões de habitantes, destaca-se como uma das nações mais populosas e influentes do mundo.",
+      eua_est_sub: "Ponto turístico: Estátua da Liberdade",
+      eua_est_txt: "Inaugurada em 1886, foi um presente da França e simboliza liberdade e democracia. Está localizada em Nova York, sendo um dos pontos turísticos mais famosos do mundo.",
+      eua_cult_sub: "Cultura - Melhor época para viajar para a EUA",
+      eua_cult_txt: "Os Estados Unidos possuem uma cultura diversa, formada pela mistura de diferentes povos e tradições do mundo todo. O país é uma grande influência global em áreas como música, cinema e tecnologia, além de valorizar o individualismo, a inovação e o entretenimento.",
+      eua_culi_sub: "Culinária dos EUA",
+      eua_culi_txt: "A culinária dos EUA é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. nos EUA é um ícone cultural, variando entre fast-food clássico e opções gourmets.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+
+    en: {
+      //card EUA
+      label_pais: "USA",
+      label_regiao: "Region",
+      label_continente: "North America",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Hamburguer, Hot Dog, Apple Pie",
+      btn_me_aventurar: "Venture out",
+      //modal EUA
+      eua_titulo: "United States",
+      sub_dados: "General Information",
+      eua_dados_txt: "The United States is located in North America, and its capital is Washington, D.C. The country uses English as its primary language and the dollar as its official currency. With approximately 330 million inhabitants, it stands out as one of the most populous and influential nations in the world.",
+      eua_est_sub: "Tourist attraction: Statue of Liberty",
+      eua_est_txt: "Inaugurated in 1886, it was a gift from France and symbolizes freedom and democracy. It is located in New York City and is one of the most famous tourist attractions in the world.",
+      eua_cult_sub: "Culture - Best time to travel to the USA",
+      eua_cult_txt: "The United States has a diverse culture, formed by the mixture of different peoples and traditions from around the world. The country is a major global influence in areas such as music, film, and technology, and values ​​individualism, innovation, and entertainment.",
+      eua_culi_sub: "US cuisine",
+      eua_culi_txt: "American cuisine is the result of a blend of Indigenous, European, and African cultures. One of the most popular foods in the country, consumed in various versions, is fast food in the US, a cultural icon ranging from classic fast food to gourmet options.",
+      btn_ver_receitas: "View recipes",
+      btn_voltar: "← Back"
+    },
+
+    es: {
+      //card EUA
+      label_pais: "EE.UU.",
+      label_regiao: "Región",
+      label_continente: "América del Norte",
+      label_tipicos: "Platos tipicos:",
+      label_comidas: "Hamburguer, Hot Dog, Apple Pie",
+      btn_me_aventurar: "Aventurarse",
+      //modal EUA
+      eua_titulo: "Estados Unidos",
+      sub_dados: "Información General",
+      eua_dados_txt: "Estados Unidos se encuentra en América del Norte y su capital es Washington D.C. El idioma oficial del país es el inglés y el dólar es su moneda oficial. Con aproximadamente 330 millones de habitantes, se destaca como una de las naciones más pobladas e influyentes del mundo.",
+      eua_est_sub: "Atracción turística: Estatua de la Libertad",
+      eua_est_txt: "Inaugurado en 1886, fue un regalo de Francia y simboliza la libertad y la democracia. Se encuentra en la ciudad de Nueva York y es una de las atracciones turísticas más famosas del mundo.",
+      eua_cult_sub: "Cultura - Mejor época para viajar a Estados Unidos",
+      eua_cult_txt: "Estados Unidos posee una cultura diversa, formada por la mezcla de diferentes pueblos y tradiciones de todo el mundo. El país ejerce una gran influencia global en áreas como la música, el cine y la tecnología, y valora el individualismo, la innovación y el entretenimiento.",
+      eua_culi_sub: "cocina estadounidense",
+      eua_culi_txt: "La gastronomía estadounidense es el resultado de la fusión de culturas indígenas, europeas y africanas. Uno de los alimentos más populares del país, consumido en diversas versiones, es la comida rápida en Estados Unidos, un ícono cultural que abarca desde la comida rápida clásica hasta opciones gourmet.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+
+  var traducoesAustralia = {
+    pt: {
+      //card Austrália
+      label_pais: "Austrália",
+      label_regiao: "Região",
+      label_continente: "Oceania",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Kangaroo, Meat Pie, Tim Tams",
+      btn_me_aventurar: "Me aventurar",
+      //modal Austrália
+      aus_titulo: "Austrália",
+      sub_dados: "Dados Gerais",
+      aus_dados_txt: "A Austrália está localizada na Oceania e tem como capital Canberra. O país ocupa praticamente todo um continente, sendo conhecido por sua biodiversidade única e paisagens naturais impressionantes. O idioma oficial é o inglês e a moeda é o dólar australiano. Com cerca de 26 milhões de habitantes, a população se concentra principalmente nas áreas costeiras, e o país apresenta alto índice de qualidade de vida. Como suas estações são invertidas em relação ao Brasil, o melhor período para viajar é entre março e maio e de setembro a novembro, quando o clima está equilibrado.",
+      aus_syd_sub: "Ponto turístico: Ópera de Sydney",
+      aus_syd_txt: "Inaugurada em 1973, é um dos edifícios mais icônicos do mundo, famoso por sua arquitetura moderna em formato de “velas”. Projetada pelo arquiteto dinamarquês Jørn Utzon, tornou-se um símbolo da Austrália e um importante centro cultural para apresentações de ópera, teatro e música.",
+      aus_cult_sub: "Cultura",
+      aus_cult_txt: "A cultura australiana é formada pela união das tradições dos povos aborígenes com a influência britânica. Os australianos valorizam um estilo de vida descontraído, com forte ligação com a natureza, praias e esportes ao ar livre. A sociedade é multicultural e bastante receptiva a diferentes culturas.",
+      aus_culi_sub: "Culinária da Austrália",
+      aus_culi_txt: "A culinária da Austrália é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. na Austrália é um ícone cultural, variando entre fast-food clássico e opções gourmets.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+
+    en: {
+      //card Austrália
+      label_pais: "Australia",
+      label_regiao: "Region",
+      label_continente: "Oceania",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Kangaroo, Meat Pie, Tim Tams",
+      btn_me_aventurar: "Venture out",
+      //modal Austrália
+      aus_titulo: "Australia",
+      sub_dados: "General Information",
+      aus_dados_txt: "Australia is located in Oceania and its capital is Canberra. The country occupies almost an entire continent and is known for its unique biodiversity and stunning natural landscapes. The official language is English and the currency is the Australian dollar. With approximately 26 million inhabitants, the population is mainly concentrated in coastal areas, and the country boasts a high quality of life index. As its seasons are reversed compared to Brazil, the best time to travel is between March and May and from September to November, when the weather is balanced.",
+      aus_syd_sub: "Tourist attraction: Sydney Opera House",
+      aus_syd_txt: "Opened in 1973, it is one of the world's most iconic buildings, famous for its modern 'sail'-shaped architecture. Designed by Danish architect Jørn Utzon, it has become a symbol of Australia and an important cultural center for opera, theatre and music performances.",
+      aus_cult_sub: "Culture",
+      aus_cult_txt: "Australian culture is formed by the union of Aboriginal traditions with British influence. Australians value a relaxed lifestyle, with a strong connection to nature, beaches, and outdoor sports. The society is multicultural and very receptive to different cultures.",
+      aus_culi_sub: "Australian cuisine",
+      aus_culi_txt: "Australian cuisine is a result of the blending of Indigenous, European, and African cultures. One of the country's most popular foods, consumed in diverse versions, is fast food, a cultural icon in Australia, ranging from classic fast food to gourmet options.",
+      btn_ver_receitas: "View recipes",
+      btn_voltar: "← Back"
+    },
+
+    es: {
+      //card Austrália
+      label_pais: "Australia",
+      label_regiao: "Región",
+      label_continente: "Oceanía",
+      label_tipicos: "Platos tipicos:",
+      label_comidas: "Kangaroo, Meat Pie, Tim Tams",
+      btn_me_aventurar: "Aventurarse",
+      //modal Austrália
+      aus_titulo: "Australia",
+      sub_dados: "Información General",
+      aus_dados_txt: "Australia se encuentra en Oceanía y su capital es Canberra. El país ocupa casi todo un continente y es conocido por su singular biodiversidad y sus impresionantes paisajes naturales. El idioma oficial es el inglés y la moneda es el dólar australiano. Con aproximadamente 26 millones de habitantes, la población se concentra principalmente en las zonas costeras, y el país goza de un alto índice de calidad de vida. Dado que sus estaciones son opuestas a las de Brasil, la mejor época para viajar es entre marzo y mayo, y de septiembre a noviembre, cuando el clima es más equilibrado.",
+      aus_syd_sub: "Atracción turística: Ópera de Sídney",
+      aus_syd_txt: "Inaugurado en 1973, es uno de los edificios más emblemáticos del mundo, famoso por su arquitectura moderna en forma de vela. Diseñado por el arquitecto danés Jørn Utzon, se ha convertido en un símbolo de Australia y en un importante centro cultural para la ópera, el teatro y los espectáculos musicales.",
+      aus_cult_sub: "Cultura",
+      aus_cult_txt: "La cultura australiana se forja a partir de la fusión de las tradiciones aborígenes con la influencia británica. Los australianos valoran un estilo de vida relajado, con una fuerte conexión con la naturaleza, las playas y los deportes al aire libre. La sociedad es multicultural y muy receptiva a las diferentes culturas.",
+      aus_culi_sub: "Cocina australiana",
+      aus_culi_txt: "La gastronomía australiana es el resultado de la fusión de las culturas indígena, europea y africana. Uno de los platos más populares del país, que se consume en diversas versiones, es la comida rápida, un ícono cultural en Australia, que abarca desde la comida rápida clásica hasta opciones gourmet.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+
+  var traducoesFranca = {
+    pt: {
+      //card França
+      label_pais: "França",
+      label_regiao: "Região",
+      label_continente: "Europa",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Croissant, Coq au Vin, Ratatouille",
+      btn_me_aventurar: "Me aventurar",
+      //modal França
+      fr_titulo: "França",
+      sub_dados: "Dados Gerais",
+      fr_dados_txt: "A França está situada na Europa Ocidental e tem como capital Paris. O país possui grande importância histórica e cultural, sendo um dos destinos turísticos mais visitados do mundo, o país é ideal para visitação na primavera e no outono, entre abril e junho e de setembro a outubro, quando o clima é mais agradável e as cidades estão menos cheias. O idioma oficial é o francês e a moeda utilizada é o euro. Com aproximadamente 67 milhões de habitantes, a França se destaca por sua influência global nas áreas de arte, moda, gastronomia e política.",
+      fr_eif_sub: "Ponto turístico: Torre Eiffel",
+      fr_par_txt: "Construída em 1889 para a Exposição Universal de Paris, inicialmente foi criticada, mas se tornou um dos maiores símbolos da França e um dos monumentos mais visitados do mundo.",
+      fr_cult_sub: "Cultura",
+      fr_cult_txt: "A França é referência mundial em arte, moda e gastronomia. O país valoriza a estética, a tradição e o estilo de vida refinado. Movimentos artísticos e intelectuais, como o Iluminismo, tiveram grande influência global, reforçando o papel da França na história cultural do mundo.",
+      fr_culi_sub: "Culinária da França",
+      fr_culi_txt: "Um pão folhado típico, muito consumido no café da manhã.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+
+    en: {
+      //card França
+      label_pais: "France",
+      label_regiao: "Region",
+      label_continente: "Europe",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Croissant, Coq au Vin, Ratatouille",
+      btn_me_aventurar: "Venture out",
+      //modal França 
+      fr_titulo: "France",
+      sub_dados: "General Information",
+      fr_dados_txt: "France is located in Western Europe and its capital is Paris. The country has great historical and cultural importance, being one of the most visited tourist destinations in the world. It is ideal to visit in the spring and autumn, between April and June and from September to October, when the weather is more pleasant and the cities are less crowded. The official language is French and the currency used is the euro. With approximately 67 million inhabitants, France stands out for its global influence in the areas of art, fashion, gastronomy, and politics.",
+      fr_eif_sub: "Tourist attraction: Eiffel Tower",
+      fr_par_txt: "Built in 1889 for the Universal Exposition in Paris, it was initially criticized, but it has become one of the greatest symbols of France and one of the most visited monuments in the world.",
+      fr_cult_sub: "Culture",
+      fr_cult_txt: "France is a world reference in art, fashion, and gastronomy. The country values ​​aesthetics, tradition, and a refined lifestyle. Artistic and intellectual movements, such as the Enlightenment, have had a great global influence, reinforcing France's role in the world's cultural history.",
+      fr_culi_sub: "French cuisine",
+      fr_culi_txt: "A typical flaky bread, commonly eaten for breakfast.",
+      btn_ver_receitas: "View recipes",
+      btn_voltar: "← Back"
+    },
+
+    es: {
+      //card França
+      label_pais: "Francia",
+      label_regiao: "Región",
+      label_continente: "Europa",
+      label_tipicos: "Platos tipicos:",
+      label_comidas: "Croissant, Coq au Vin, Ratatouille",
+      btn_me_aventurar: "Aventurarse",
+      //modal França
+      fr_titulo: "Francia",
+      sub_dados: "Información General",
+      fr_dados_txt: "Francia se encuentra en Europa Occidental y su capital es París. El país posee una gran importancia histórica y cultural, siendo uno de los destinos turísticos más visitados del mundo. Es ideal visitarlo en primavera y otoño, entre abril y junio y de septiembre a octubre, cuando el clima es más agradable y las ciudades están menos concurridas. El idioma oficial es el francés y la moneda es el euro. Con aproximadamente 67 millones de habitantes, Francia destaca por su influencia global en los ámbitos del arte, la moda, la gastronomía y la política.",
+      fr_eif_sub: "Atracción turística: Torre Eiffel",
+      fr_par_txt: "Construido en 1889 para la Exposición Universal de París, fue inicialmente criticado, pero se ha convertido en uno de los mayores símbolos de Francia y en uno de los monumentos más visitados del mundo.",
+      fr_cult_sub: "Cultura",
+      fr_cult_txt: "Francia es un referente mundial en arte, moda y gastronomía. El país valora la estética, la tradición y un estilo de vida refinado. Movimientos artísticos e intelectuales, como la Ilustración, han tenido una gran influencia global, reforzando el papel de Francia en la historia cultural mundial.",
+      fr_culi_sub: "Cocina francesa",
+      fr_culi_txt: "Un pan hojaldrado típico, que se suele comer en el desayuno.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+
+  var traducoesEgito = {
+    pt: {
+      //card Egito
+      label_pais: "Egito",
+      label_regiao: "Região",
+      label_continente: "África",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Ful Medames, Koshari, Taamiya",
+      btn_me_aventurar: "Me aventurar",
+      //modal Egito
+      egp_titulo: "Egito",
+      sub_dados: "Dados Gerais",
+      egp_dados_txt: "O Egito está localizado no nordeste da África e tem como capital Cairo. O idioma oficial é o árabe e a moeda é a libra egípcia. Com mais de 100 milhões de habitantes, o país é conhecido por sua história milenar e grande importância no mundo antigo. Devido ao clima desértico, a melhor época para visitar é entre outubro e abril, quando o clima é mais ameno e as temperaturas estão mais suportáveis.",
+      egp_gize_sub: "Ponto turístico: Pirâmides de Gizé",
+      egp_gize_txt: "Construídas há mais de 4.500 anos, são uma das maiores realizações da engenharia da antiguidade e serviam como tumbas para os faraós.",
+      egp_culi_sub: "Culinária: Koshari",
+      egp_culi_txt: "Prato tradicional feito com arroz, macarrão e lentilhas. é o prato nacional do Egito e uma das comidas de rua mais populares e amadas do país.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+
+    en: {
+      //card Egito
+      label_pais: "Egypt",
+      label_regiao: "Region",
+      label_continente: "Africa",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Ful Medames, Koshari, Taamiya",
+      btn_me_aventurar: "Venture out",
+      //modal Egito
+      egp_titulo: "Egypt",
+      sub_dados: "General Information",
+      egp_dados_txt: "Egypt is located in northeastern Africa and its capital is Cairo. The official language is Arabic and the currency is the Egyptian pound. With over 100 million inhabitants, the country is known for its ancient history and great importance in the ancient world. Due to its desert climate, the best time to visit is between October and April, when the weather is milder and temperatures are more bearable.",
+      egp_gize_sub: "Tourist site: Pyramids of Giza",
+      egp_gize_txt: "Built over 4,500 years ago, they are one of the greatest engineering achievements of antiquity and served as tombs for the pharaohs.",
+      egp_culi_sub: "Cuisine: Koshari",
+      egp_culi_txt: "A traditional dish made with rice, noodles, and lentils. It is the national dish of Egypt and one of the most popular and beloved street foods in the country.",
+      btn_ver_receitas: "View recipes",
+      btn_voltar: "← Back"
+    },
+
+    es: {
+      //card Egito
+      label_pais: "Egipto",
+      label_regiao: "Región",
+      label_continente: "Africa",
+      label_tipicos: "Platos tipicos:",
+      label_comidas: "Ful Medames, Koshari, Taamiya",
+      btn_me_aventurar: "Aventurarse",
+      //modal Egito
+      egp_titulo: "Egipto",
+      sub_dados: "Información General",
+      egp_dados_txt: "Egipto se encuentra en el noreste de África y su capital es El Cairo. El idioma oficial es el árabe y la moneda es la libra egipcia. Con más de 100 millones de habitantes, el país es conocido por su rica historia y su gran importancia en el mundo antiguo. Debido a su clima desértico, la mejor época para visitarlo es entre octubre y abril, cuando el clima es más templado y las temperaturas son más agradables.",
+      egp_gize_sub: "Sitio turístico: Pirámides de Giza",
+      egp_gize_txt: "Construidas hace más de 4.500 años, son uno de los mayores logros de la ingeniería de la antigüedad y sirvieron como tumbas para los faraones.",
+      egp_culi_sub: "Cocina: Koshari",
+      egp_culi_txt: "Un plato tradicional elaborado con arroz, fideos y lentejas. Es el plato nacional de Egipto y una de las comidas callejeras más populares y apreciadas del país.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+
+  var traducoesCoreiadosul = {
+    pt: {
+      //card Coreia do Sul 
+      label_pais: "Coreia do Sul",
+      label_regiao: "Região",
+      label_continente: "Ásia",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Kimchi, Bibimbap, Bulgogi",
+      btn_me_aventurar: "Me aventurar",
+      //modal Coreia do Sul
+      cor_titulo: "Coreia do Sul",
+      sub_dados: "Dados Gerais",
+      cor_dados_txt: "Localizada no leste da Ásia, a Coreia do Sul é uma nação vibrante e tecnologicamente avançada, com cerca de 51 milhões de habitantes. Seul é a capital e o coração econômico, unindo arranha-céus modernos a palácios antigos. É uma república democrática, líder global em eletrônicos e cultura pop       (K-pop), conhecida por sua disciplina, alta conectividade e culinária picante.",
+      cor_gyeo_sub: "Ponto turístico: Palácio Gyeongbokgung",
+      cor_gyeo_txt: "É o maior e principal palácio real da dinastia Joseon, localizado em Seul. Com sua arquitetura imponente e jardins vastos, é um símbolo da história coreana. É comum ver turistas e locais vestindo Hanbok (roupa tradicional) para explorar seus pavilhões e assistir à troca da guarda real.",
+      cor_culi_sub: "Culinária: Kimchi",
+      cor_culi_txt: "Kimchi é um alimento fermentado coreano, feito principalmente com repolho, cenoura e pimenta. É uma parte essencial da dieta coreana e é conhecido por seus benefícios para a saúde digestiva.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+
+    en: {
+      //card Coreia do Sul
+      label_pais: "South Korea",
+      label_regiao: "Region",
+      label_continente: "Asia",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Kimchi, Bibimbap, Bulgogi",
+      btn_me_aventurar: "Venture out",
+      //modal Coreia do Sul
+      cor_titulo: "South Korea",
+      sub_dados: "General Information",
+      cor_dados_txt: "Located in East Asia, South Korea is a vibrant and technologically advanced nation with approximately 51 million inhabitants. Seoul is the capital and economic heart, blending modern skyscrapers with ancient palaces. It is a democratic republic, a global leader in electronics and pop culture (K-pop), known for its discipline, high connectivity, and spicy cuisine.",
+      cor_gyeo_sub: "Tourist attraction: Gyeongbokgung Palace",
+      cor_gyeo_txt: "It is the largest and most important royal palace of the Joseon Dynasty, located in Seoul. With its imposing architecture and vast gardens, it is a symbol of Korean history. It is common to see tourists and locals wearing Hanbok (traditional clothing) exploring its pavilions and watching the changing of the royal guard.",
+      cor_culi_sub: "Cuisine: Kimchi",
+      cor_culi_txt: "Kimchi is a Korean fermented food, made primarily with cabbage, carrots, and chili peppers. It is an essential part of the Korean diet and is known for its digestive health benefits.",
+      btn_ver_receitas: "View recipes",
+      btn_voltar: "← Back"
+    },
+
+    es: {
+      //card Coreia do Sul
+      label_pais: "Corea del Sur",
+      label_regiao: "Región",
+      label_continente: "Asia",
+      label_tipicos: "Platos tipicos:",
+      label_comidas: "Kimchi, Bibimbap, Bulgogi",
+      btn_me_aventurar: "Aventurarse",
+      //modal Coreia do Sul
+      cor_titulo: "Corea del Sur",
+      sub_dados: "Información General",
+      cor_dados_txt: "Ubicada en Asia Oriental, Corea del Sur es una nación dinámica y tecnológicamente avanzada con aproximadamente 51 millones de habitantes. Seúl, la capital y centro económico, combina modernos rascacielos con palacios ancestrales. Es una república democrática, líder mundial en electrónica y cultura pop (K-pop), conocida por su disciplina, su alta conectividad y su gastronomía picante.",
+      cor_gyeo_sub: "Atracción turística: Palacio Gyeongbokgung",
+      cor_gyeo_txt: "Es el palacio real más grande e importante de la dinastía Joseon, ubicado en Seúl. Con su imponente arquitectura y sus extensos jardines, es un símbolo de la historia de Corea. Es común ver a turistas y lugareños vestidos con hanbok (traje tradicional coreano) explorando sus pabellones y presenciando el cambio de guardia real.",
+      cor_culi_sub: "Cocina: kimchi",
+      cor_culi_txt: "El kimchi es un alimento fermentado coreano, elaborado principalmente con repollo, zanahorias y chiles. Es un componente esencial de la dieta coreana y es conocido por sus beneficios para la salud digestiva.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+
+  var traducoesIndia = {
+    pt: {
+      //card Índia
+      label_pais: "Índia",
+      label_regiao: "Região",
+      label_continente: "Ásia",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Biryani, Curry, Naan",
+      btn_me_aventurar: "Me aventurar",
+      //modal Índia
+      ind_titulo: "Índia",
+      sub_dados: "Dados Gerais",
+      ind_sub_txt: "Localizada no sul da Ásia, a Índia é o país mais populoso do mundo, com mais de 1,4 bilhão de habitantes. Nova Deli é a capital, enquanto Mumbai é o principal centro financeiro. É uma democracia federal conhecida por sua diversidade espiritual, festivais coloridos, indústria cinematográfica (Bollywood) e uma economia em rápido crescimento tecnológico.",
+      ind_taj_sub: "Ponto turístico: Taj Mahal",
+      ind_taj_txt: "Situado em Agra, este mausoléu de mármore branco é considerado a maior  prova de amor do mundo, construído pelo imperador Shah Jahan em memória de sua esposa. É uma obra-prima da arquitetura mogol, reconhecida mundialmente por sua simetria perfeita e detalhes em pedras semipreciosas.",
+      ind_culi_sub: "Culinária: Frango Tikka Masala",
+      ind_culi_txt: "Frango Tikka Masala é um prato indiano popular, feito com pedaços de frango grelhado em uma salsa cremosa e especiada. É conhecido por sua combinação de sabores picantes e ricos.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+
+    en: {
+      //card Índia
+      label_pais: "India",
+      label_regiao: "Region",
+      label_continente: "Asia",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Biryani, Curry, Naan",
+      btn_me_aventurar: "Venture out",
+      //modal Índia
+      ind_titulo: "India",
+      sub_dados: "General Information",
+      ind_sub_txt: "Located in South Asia, India is the world's most populous country, with over 1.4 billion inhabitants. New Delhi is the capital, while Mumbai is the main financial center. It is a federal democracy known for its spiritual diversity, colorful festivals, film industry (Bollywood), and a rapidly growing technological economy.",
+      ind_taj_sub: "Tourist attraction: Taj Mahal",
+      ind_taj_txt: "Located in Agra, this white marble mausoleum is considered the greatest testament to love in the world, built by Emperor Shah Jahan in memory of his wife. It is a masterpiece of Mughal architecture, recognized worldwide for its perfect symmetry and details in semi-precious stones.",
+      ind_culi_sub: "Cuisine: Chicken Tikka Masala",
+      ind_culi_txt: "Chicken Tikka Masala is a popular Indian dish made with pieces of grilled chicken in a creamy, spiced sauce. It is known for its combination of spicy and rich flavors.",
+      btn_ver_receitas: "View recipes",
+      btn_voltar: "← Back"
+    },
+
+    es: {
+      //card Índia
+      label_pais: "India",
+      label_regiao: "Región",
+      label_continente: "Asia",
+      label_tipicos: "Platos típicos:",
+      label_comidas: "Biryani, Curry, Naan",
+      btn_me_aventurar: "Aventurarse",
+      //modal Índia
+      ind_titulo: "India",
+      sub_dados: "Información General",
+      ind_sub_txt: "Situada en el sur de Asia, India es el país más poblado del mundo, con más de 1400 millones de habitantes. Nueva Delhi es la capital, mientras que Bombay es el principal centro financiero. Es una democracia federal conocida por su diversidad espiritual, sus coloridos festivales, su industria cinematográfica (Bollywood) y una economía tecnológica en rápido crecimiento.",
+      ind_taj_sub: "Atracción turística: Taj Mahal",
+      ind_taj_txt: "Ubicado en Agra, este mausoleo de mármol blanco es considerado el mayor testimonio de amor del mundo, construido por el emperador Shah Jahan en memoria de su esposa. Es una obra maestra de la arquitectura mogol, reconocida mundialmente por su perfecta simetría y sus detalles en piedras semipreciosas.",
+      ind_culi_sub: "Cocina: Pollo Tikka Masala",
+      ind_culi_txt: "El pollo tikka masala es un plato indio muy popular, elaborado con trozos de pollo a la parrilla en una salsa cremosa y especiada. Se caracteriza por su combinación de sabores intensos y picantes.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+
+  var traducoesNovaZelandia = {
+    pt: {
+      //card Nova Zelândia
+      label_pais: "Nova Zelândia",
+      label_regiao: "Região",
+      label_continente: "Oceania",
+      label_tipicos: "Pratos típicos:",
+      label_comidas: "Pavlova, Hangi, Silver Fern",
+      btn_me_aventurar: "Me aventurar",
+      //modal Nova Zelândia
+      nvze_titulo: "Nova Zelândia",
+      sub_dados: "Dados Gerais",
+      nvze_sub_txt: "Localizada no sudoeste do Oceano Pacífico, é um país insular desenvolvido com cerca de 5 milhões de habitantes. Wellington é a capital e Auckland a maior cidade. Conhecida por suas paisagens naturais deslumbrantes (montanhas, fiordes e pastagens), é uma monarquia constitucional famosa pela cultura Maori e por ser o cenário de grandes produções cinematográficas.",
+      nvze_mil_sub: "Ponto turístico: Milford Sound",
+      nvze_mil_txt: "Localizado na Ilha do Sul, é um fiorde esculpido por geleiras, descrito por Rudyard Kipling como a oitava maravilha do mundo. É cercado por falésias íngremes e cachoeiras que jorram centenas de metros abaixo, sendo o destino principal para passeios de barco e amantes da natureza selvagem.",
+      nvze_culi_sub: "Culinária: Pavlova",
+      nvze_culi_txt: "A Pavlova é um doce australiano/novozelandês, feito com meringue recheado com creme de leite e frutas frescas. É conhecida por sua textura crocante por fora e macia por dentro, sendo um prato popular em ocasiões especiais e festas.",
+      btn_ver_receitas: "Ver receitas",
+      btn_voltar: "← Voltar"
+    },
+
+    en: {
+      //card Nova Zelândia
+      label_pais: "New Zealand",
+      label_regiao: "Region",
+      label_continente: "Oceania",
+      label_tipicos: "Typical dishes:",
+      label_comidas: "Pavlova, Hangi, Silver Fern",
+      btn_me_aventurar: "Venture out",
+      //modal Nova Zelândia
+      nvze_titulo: "New Zealand",
+      sub_dados: "General Information",
+      nvze_sub_txt: "Located in the southwest Pacific Ocean, it is a developed island nation with approximately 5 million inhabitants. Wellington is the capital and Auckland the largest city. Known for its stunning natural landscapes (mountains, fjords, and grasslands), it is a constitutional monarchy famous for its Maori culture and for being the setting of major film productions.",
+      nvze_mil_sub: "Tourist attraction: Milford Sound",
+      nvze_mil_txt: "Located on the South Island, it is a fjord carved by glaciers, described by Rudyard Kipling as the eighth wonder of the world. It is surrounded by steep cliffs and waterfalls that cascade hundreds of meters below, making it a prime destination for boat trips and wildlife enthusiasts.",
+      nvze_culi_sub: "Culinary: Pavlova",
+      nvze_culi_txt: "Pavlova is an Australian/New Zealand dessert made with meringue filled with sour cream and fresh fruit. It is known for its crisp exterior and soft interior, making it a popular dish for special occasions and celebrations.",
+      btn_ver_receitas: "View recipes",
+      btn_voltar: "← Back"
+    },
+
+    es: {
+      //card Nova Zelândia
+      label_pais: "Nueva Zelanda",
+      label_regiao: "Región",
+      label_continente: "Oceanía",
+      label_tipicos: "Platos típicos:",
+      label_comidas: "Pavlova, Hangi, Silver Fern",
+      btn_me_aventurar: "Aventurarse",
+      //modal Nova Zelândia
+      nvze_titulo: "Nueva Zelanda",
+      sub_dados: "Información General",
+      nvze_sub_txt: "Situada en el suroeste del océano Pacífico, es una nación insular desarrollada con aproximadamente 5 millones de habitantes. Wellington es la capital y Auckland la ciudad más grande. Conocida por sus impresionantes paisajes naturales (montañas, fiordos y praderas), es una monarquía constitucional famosa por su cultura maorí y por ser escenario de importantes producciones cinematográficas.",
+      nvze_mil_sub: "Atracción turística: Milford Sound",
+      nvze_mil_txt: "Situado en la Isla Sur, este fiordo, esculpido por glaciares, fue descrito por Rudyard Kipling como la octava maravilla del mundo. Rodeado de escarpados acantilados y cascadas que caen cientos de metros, es un destino ideal para paseos en barco y para los amantes de la naturaleza.",
+      nvze_culi_sub: "Culinaria: Pavlova",
+      nvze_culi_txt: "La pavlova es un postre australiano/neozelandés elaborado con merengue relleno de crema agria y fruta fresca. Se caracteriza por su exterior crujiente y su interior suave, lo que la convierte en un plato popular para ocasiones especiales y celebraciones.",
+      btn_ver_receitas: "Ver recetas",
+      btn_voltar: "← Volver"
+    }
+  };
+
+
+  function traduzirConteudoBrasil(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesBrasil[idioma] && traducoesBrasil[idioma][chave]) {
+        elementos[i].innerText = traducoesBrasil[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoBrasil(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoBrasil(idiomaSalvo);
+  });
+
+  function traduzirConteudoJapao(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesJapao[idioma] && traducoesJapao[idioma][chave]) {
+        elementos[i].innerText = traducoesJapao[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoJapao(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoJapao(idiomaSalvo);
+  });
+
+  function traduzirConteudoColombia(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesColombia[idioma] && traducoesColombia[idioma][chave]) {
+        elementos[i].innerText = traducoesColombia[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoColombia(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoColombia(idiomaSalvo);
+  });
+
+
+  function traduzirConteudoEUA(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesEUA[idioma] && traducoesEUA[idioma][chave]) {
+        elementos[i].innerText = traducoesEUA[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoEUA(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoEUA(idiomaSalvo);
+  });
+
+
+  function traduzirConteudoAustralia(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesAustralia[idioma] && traducoesAustralia[idioma][chave]) {
+        elementos[i].innerText = traducoesAustralia[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoAustralia(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoAustralia(idiomaSalvo);
+  });
+
+
+  function traduzirConteudoFranca(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesFranca[idioma] && traducoesFranca[idioma][chave]) {
+        elementos[i].innerText = traducoesFranca[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoFranca(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoFranca(idiomaSalvo);
+  });
+
+
+  function traduzirConteudoEgito(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesEgito[idioma] && traducoesEgito[idioma][chave]) {
+        elementos[i].innerText = traducoesEgito[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoEgito(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoEgito(idiomaSalvo);
+  });
+
+
+  function traduzirConteudoCoreiadosul(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesCoreiadosul[idioma] && traducoesCoreiadosul[idioma][chave]) {
+        elementos[i].innerText = traducoesCoreiadosul[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoCoreiadosul(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoCoreiadosul(idiomaSalvo);
+  });
+
+
+  function traduzirConteudoIndia(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesIndia[idioma] && traducoesIndia[idioma][chave]) {
+        elementos[i].innerText = traducoesIndia[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoIndia(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoIndia(idiomaSalvo);
+  });
+
+
+  function traduzirConteudoNovaZelandia(idioma) {
+    var elementos = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elementos.length; i++) {
+      var chave = elementos[i].getAttribute('data-i18n');
+      if (traducoesNovaZelandia[idioma] && traducoesNovaZelandia[idioma][chave]) {
+        elementos[i].innerText = traducoesNovaZelandia[idioma][chave];
+      }
+    }
+  }
+
+  var mudarIdiomaOriginal = window.mudarIdioma;
+  window.mudarIdioma = function(idioma) {
+    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
+    traduzirConteudoNovaZelandia(idioma);
+  };
+
+  window.addEventListener('load', function() {
+    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
+    traduzirConteudoNovaZelandia(idiomaSalvo);
+  });
+
+</script>

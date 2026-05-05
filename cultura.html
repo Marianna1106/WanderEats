@@ -634,15 +634,13 @@ function aplicarTraducoes(idioma) {
 }
 
 
-var mudarIdiomaOriginal = window.mudarIdioma; 
-
-window.mudarIdioma = function(idioma) {
-    if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
-    
-    aplicarTraducoes(idioma);
-    localStorage.setItem("idioma", idioma);
-    console.log("Idioma alterado para: " + idioma);
-};
+window.mudarIdioma = (function(original) {
+    return function(idioma) {
+        if (typeof original === 'function') original(idioma);
+        aplicarTraducoes(idioma);
+        localStorage.setItem("idioma", idioma);
+    };
+})(window.mudarIdioma);
 
 window.addEventListener('load', function() {
     var idiomaSalvo = localStorage.getItem("idioma") || "pt";

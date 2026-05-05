@@ -616,24 +616,27 @@ var traducoesLatina = {
 
 function traduzirConteudoOcidental(idioma) {
     var elementos = document.querySelectorAll('[data-i18n]');
-    for (var i = 0; i < elementos.length; i++) {
-      var chave = elementos[i].getAttribute('data-i18n');
-      if (traducoesOcidental[idioma] && traducoesOcidental[idioma][chave]) {
-        elementos[i].innerText = traducoesOcidental[idioma][chave];
-      }
-    }
-  }
+    elementos.forEach(function(el) {
+        var chave = el.getAttribute('data-i18n');
+        if (traducoesOcidental[idioma] && traducoesOcidental[idioma][chave]) {
+            el.innerHTML = traducoesOcidental[idioma][chave];
+        }
+    });
+}
 
-  var mudarIdiomaOriginal = window.mudarIdioma;
-  window.mudarIdioma = function(idioma) {
+// 3. O evento de clique (Garanta que seus botões chamem mudarIdioma)
+var mudarIdiomaOriginal = window.mudarIdioma;
+window.mudarIdioma = function(idioma) {
     if (typeof mudarIdiomaOriginal === 'function') mudarIdiomaOriginal(idioma);
     traduzirConteudoOcidental(idioma);
-  };
+    localStorage.setItem("idioma", idioma);
+};
 
-  window.addEventListener('load', function() {
+// 4. Carregamento inicial
+window.addEventListener('load', function() {
     var idiomaSalvo = localStorage.getItem("idioma") || "pt";
     traduzirConteudoOcidental(idiomaSalvo);
-  });
+});
 
 
   function traduzirConteudoChinesa(idioma) {

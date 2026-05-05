@@ -252,22 +252,20 @@
 </div>
 
 <script>
-  function abrirModal(cultura) {
-  var modal = document.getElementById('modal-' + cultura);
-  if (modal) {
-
+  function trocarIdioma(idioma) {
+  // Verifica se o idioma existe nas nossas traduções
+  if (traducoesOcidental[idioma]) {
+    // Busca todos os elementos que têm o atributo data-i18n
+    const elementos = document.querySelectorAll('[data-i18n]');
     
-    if (!modal.querySelector('header')) {
-      var headerOriginal = document.querySelector('header');
-      var headerClone = headerOriginal.cloneNode(true);
-      modal.insertBefore(headerClone, modal.firstChild);
-    }
-
-    modal.style.display = 'block';
-    window.scrollTo(0, 0);
+    elementos.forEach(el => {
+      const chave = el.getAttribute('data-i18n');
+      if (traducoesOcidental[idioma][chave]) {
+        el.innerText = traducoesOcidental[idioma][chave];
+      }
+    });
   }
 }
-
 var traducoesOcidental = {
 
   pt: {

@@ -42,6 +42,7 @@ function carregarPagina(pagina) {
 // ==========================
 // IDIOMA
 // ==========================
+
 function mudarIdioma(idioma) {
   localStorage.setItem("idioma", idioma);
 
@@ -89,6 +90,10 @@ function mudarIdioma(idioma) {
   set('menuContinente', t.menuContinente);
   set('menuCultura', t.menuCultura);
   set('menuReceita', t.menuReceita);
+
+  // Aplica traduções dos arquivos externos se já estiverem carregados
+  if (typeof aplicarTraducoesPais === 'function') aplicarTraducoesPais(idioma);
+  if (typeof aplicarTraducoes === 'function') aplicarTraducoes(idioma);
 }
 
 // ==========================

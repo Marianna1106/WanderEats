@@ -601,63 +601,28 @@ var traducoesLatina = {
   }
 };
 
+var todosDicionariosCultura = [
+  traducoesOcidental,
+  traducoesChinesa,
+  traducoesIndiana,
+  traducoesJaponesa,
+  traducoesbrasileira,
+  traducoesLatina
+];
+
 function aplicarTraducoes(idioma) {
-    
-    const dicionarios = [
-        traducoesOcidental,
-        typeof traducoesChinesa !== 'undefined' ? traducoesChinesa : {},
-        typeof traducoesIndiana !== 'undefined' ? traducoesIndiana : {},
-        typeof traducoesJaponesa !== 'undefined' ? traducoesJaponesa : {},
-        typeof traducoesBrasileira !== 'undefined' ? traducoesBrasileira : {},
-        typeof traducoesLatina !== 'undefined' ? traducoesLatina : {}
-    ];
-
-    const elementos = document.querySelectorAll('[data-i18n]');
-    
-    elementos.forEach(el => {
-        const chave = el.getAttribute('data-i18n');
-        let textoTraduzido = null;
-
-        
-        for (let dic of dicionarios) {
-            if (dic[idioma] && dic[idioma][chave]) {
-                textoTraduzido = dic[idioma][chave];
-                break;
-            }
-        }
-
-        if (textoTraduzido) {
-            
-            el.innerHTML = textoTraduzido;
-        }
-    });
-}
-
-
-window.mudarIdioma = (function(original) {
-    return function(idioma) {
-        if (typeof original === 'function') original(idioma);
-        aplicarTraducoes(idioma);
-        localStorage.setItem("idioma", idioma);
-    };
-})(window.mudarIdioma);
-
-window.addEventListener('load', function() {
-    var idiomaSalvo = localStorage.getItem("idioma") || "pt";
-    aplicarTraducoes(idiomaSalvo);
-});
-
-
-function abrirModal(cultura) {
-    var modal = document.getElementById('modal-' + cultura);
-    if (modal) {
-        modal.style.display = 'block';
-        window.scrollTo(0, 0);
+  var elementos = document.querySelectorAll('[data-i18n]');
+  elementos.forEach(function(el) {
+    var chave = el.getAttribute('data-i18n');
+    for (var i = 0; i < todosDicionariosCultura.length; i++) {
+      var dic = todosDicionariosCultura[i];
+      if (dic[idioma] && dic[idioma][chave]) {
+        el.innerHTML = dic[idioma][chave];
+        break;
+      }
     }
+  });
 }
 
-function fecharModal(cultura) {
-    var modal = document.getElementById('modal-' + cultura);
-    if (modal) modal.style.display = 'none';
-}
+window.aplicarTraducoes = aplicarTraducoes;
 </script>

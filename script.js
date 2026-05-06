@@ -417,6 +417,7 @@ function fecharQuemSomos() {
 // ==========================
 // INIT 
 // ==========================
+
 window.onload = function () {
 
   let botao = document.querySelector(".btn-dark");
@@ -426,39 +427,41 @@ window.onload = function () {
     document.body.classList.add("dark");
     if (botao) botao.textContent = "☀️";
   } else {
-   if (botao) botao.textContent = "🌙";
-}
+    if (botao) botao.textContent = "🌙";
+  }
+
+  function injetarComScripts(containerId, html) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = html;
+    container.querySelectorAll('script').forEach(scriptAntigo => {
+      const scriptNovo = document.createElement('script');
+      scriptNovo.textContent = scriptAntigo.textContent;
+      document.body.appendChild(scriptNovo);
+    });
+  }
 
   mudarIdioma(localStorage.getItem("idioma") || "pt");
 
- Promise.all([
-  fetch('pais.html').then(r => r.text()),
-  fetch('continente.html').then(r => r.text()),
-  fetch('cultura.html').then(r => r.text()),
-  fetch('receita.html').then(r => r.text())
-])
-.then(([pais, continente, cultura, receita]) => {
+  Promise.all([
+    fetch('pais.html').then(r => r.text()),
+    fetch('continente.html').then(r => r.text()),
+    fetch('cultura.html').then(r => r.text()),
+    fetch('receita.html').then(r => r.text())
+  ])
+  .then(([pais, continente, cultura, receita]) => {
 
-  document.getElementById('conteudo-pais').innerHTML = pais;
-  document.getElementById('conteudo-continentes').innerHTML = '<div class="cards">' + continente + '</div>';
-  document.getElementById('conteudo-culturas').innerHTML = '<div class="cards">' + cultura + '</div>';
-  document.getElementById('conteudo-receita').innerHTML = '<div class="cards">' + receita + '</div>';
+    injetarComScripts('conteudo-pais', pais);
+    document.getElementById('conteudo-continentes').innerHTML = '<div class="cards">' + continente + '</div>';
+    injetarComScripts('conteudo-culturas', '<div class="cards">' + cultura + '</div>');
+    document.getElementById('conteudo-receita').innerHTML = '<div class="cards">' + receita + '</div>';
 
-  iniciarSliders();
-  iniciarGlobo();
+    iniciarSliders();
+    iniciarGlobo();
 
-  });
-
-  fetch('continente.html').then(r => r.text()).then(h => {
-    document.getElementById('conteudo-continentes').innerHTML = '<div class="cards">' + h + '</div>';
-  });
-
-  fetch('cultura.html').then(r => r.text()).then(h => {
-    document.getElementById('conteudo-culturas').innerHTML = '<div class="cards">' + h + '</div>';
-  });
-
-  fetch('receita.html').then(r => r.text()).then(h => {
-    document.getElementById('conteudo-receita').innerHTML = '<div class="cards">' + h + '</div>';
+    const idioma = localStorage.getItem("idioma") || "pt";
+    if (typeof aplicarTraducoesPais === 'function') aplicarTraducoesPais(idioma);
+    if (typeof aplicarTraducoes === 'function') aplicarTraducoes(idioma);
   });
 
 };

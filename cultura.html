@@ -1,21 +1,4 @@
 
-<!-- Card da Ocidental -->
-<div class="card">
-  <img src="imagens/cultura/ocidental.png" alt="Cultura Ocidental">
-  <h3 data-i18n="ocidental_cult">Ocidental</h3>
-  <div style="padding: 0 15px 20px; text-align: center; font-size: 14px; color: #555;">
-    <p>
-      <strong data-i18n="ocidental_regiao">Região:</strong>
-      <span data-i18n="ocidental_cont">Europa e Américas</span>
-    </p>
-    <p>
-      <strong data-i18n="ocidental_pratos">Pratos típicos:</strong>
-      <span data-i18n="ocidental_comidas">Pizza, Hambúrguer, Croissant</span>
-    </p>
-    <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('ocidental')" data-i18n="btn_me_aventurar">Me aventurar</button>
-  </div>
-</div>
-
 <!-- Card da Chinesa -->
 <div class="card">
   <img src="imagens/cultura/chinesa.png" alt="Cultura Chinesa">
@@ -98,31 +81,6 @@
       <span data-i18n="latina_comidas">Arepa, Ceviche, Empanada</span>
     </p>
     <button class="botao" style="margin-top:10px; padding:8px 15px; font-size:14px;" onclick="abrirModal('latina')" data-i18n="btn_me_aventurar">Me aventurar</button>
-  </div>
-</div>
-
-<!-- Modal Ocidental -->
-<div id="modal-ocidental" class="modal">
-  <div class="modal-conteudo">
-    <h2 class="modal-titulo" data-i18n="ocidental_titulo">Cultura Ocidental</h2>
-    <h3 class="modal-subtitulo" data-i18n="ocidental_cult_sub">Sobre a cultura</h3>
-    <div class="modal-bloco">
-      <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="modal-img-direita" alt="Ocidental">
-      <p class="modal-texto" data-i18n="ocidental_cult_txt">A cultura ocidental tem suas raízes na Grécia e Roma antigas, passando pelo Renascimento europeu até a modernidade americana. Valoriza o individualismo, a democracia, a ciência e a liberdade de expressão, influenciando grande parte do mundo.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="ocidental_trad_sub">Tradição: Carnaval de Veneza</h3>
-    <div class="modal-bloco">
-      <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="modal-img-esquerda" alt="Carnaval de Veneza">
-      <p class="modal-texto" data-i18n="ocidental_trad_txt">O Carnaval de Veneza é uma das festas mais antigas e elegantes do mundo, com máscaras elaboradas e fantasias históricas. Realizado desde o século XII, transforma a cidade em um espetáculo de arte e mistério.</p>
-    </div>
-    <h3 class="modal-subtitulo" data-i18n="ocidental_culi_sub">Culinária: Croissant</h3>
-    <div class="modal-bloco">
-      <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="modal-img-direita" alt="Croissant">
-      <p class="modal-texto" data-i18n="ocidental_culi_txt">O croissant é símbolo da padaria francesa, feito com massa folhada amanteigada e assado até ficar dourado e crocante. Apesar de ter origens austríacas, foi na França que se tornou ícone mundial da gastronomia ocidental.</p>
-    </div>
-    <div class="modal-voltar">
-      <button class="botao" onclick="fecharModal('ocidental')" data-i18n="btn_voltar">← Voltar</button>
-    </div>
   </div>
 </div>
 
@@ -252,64 +210,6 @@
 </div>
 
 <script>
-
-var traducoesOcidental = {
-
-  pt: {
-    //card Ocidental
-    ocidental_cult: "Ocidental",
-    ocidental_regiao: "Região:",
-    ocidental_cont: "Europa e Américas",
-    ocidental_pratos: "Pratos típicos:",
-    ocidental_comidas: "Pizza, Hambúrguer, Croissant",
-    btn_me_aventurar: "Me aventurar",
-    //modal Ocidental
-    ocidental_titulo: "Cultura Ocidental",
-    ocidental_cult_sub: "Sobre a cultura",
-    ocidental_cult_txt: "A cultura ocidental tem suas raízes na Grécia e Roma antigas, passando pelo Renascimento europeu até a modernidade americana. Valoriza o individualismo, a democracia, a ciência e a liberdade de expressão, influenciando grande parte do mundo.",
-    ocidental_trad_sub: "Tradição: Carnaval de Veneza",
-    ocidental_trad_txt: "O Carnaval de Veneza é uma das festas mais antigas e elegantes do mundo, com máscaras elaboradas e fantasias históricas. Realizado desde o século XII, transforma a cidade em um espetáculo de arte e mistério.",
-    ocidental_culi_sub: "Culinária: Croissant",
-    ocidental_culi_txt: "O croissant é símbolo da padaria francesa, feito com massa folhada amanteigada e assado até ficar dourado e crocante. Apesar de ter origens austríacas, foi na França que se tornou ícone mundial da gastronomia ocidental.",
-    btn_voltar: "← Voltar"
-  },
-  en: {
-    //card Ocidental
-    ocidental_cult: "Western",
-    ocidental_regiao: "Region:",
-    ocidental_cont: "Europe and the Americas",
-    ocidental_pratos: "Typical dishes:",
-    ocidental_comidas: "Pizza, Hamburger, Croissant",
-    btn_me_aventurar: "Venture out",
-    //modal Ocidental
-    ocidental_titulo: "Western Culture",
-    ocidental_cult_sub: "About culture",
-    ocidental_cult_txt: "Western culture has its roots in ancient Greece and Rome, passing through the European Renaissance to American modernity. It values ​​individualism, democracy, science, and freedom of expression, influencing a large part of the world.",
-    ocidental_trad_sub: "Tradition: Carnival of Venice",
-    ocidental_trad_txt: "The Carnival of Venice is one of the oldest and most elegant festivals in the world, featuring elaborate masks and historical costumes. Held since the 12th century, it transforms the city into a spectacle of art and mystery.",
-    ocidental_culi_sub: "Culinary: Croissant",
-    ocidental_culi_txt: "The croissant is a symbol of French bakeries, made with buttery puff pastry and baked until golden and crispy. Although it originated in Austria, it was in France that it became a global icon of Western gastronomy.",
-    btn_voltar: "← Back"
-  },
-  es: {
-    //card Ocidental
-    ocidental_cult: "Occidental",
-    ocidental_regiao: "Región:",
-    ocidental_cont: "Europa y América",
-    ocidental_pratos: "Platos típicos:",
-    ocidental_comidas: "Pizza, hamburguesa, croissant",
-    btn_me_aventurar: "Aventurarse",
-    //modal Ocidental
-    ocidental_titulo: "Cultura occidental",
-    ocidental_cult_sub: "Sobre la cultura",
-    ocidental_cult_txt: "La cultura occidental tiene sus raíces en la antigua Grecia y Roma, pasando por el Renacimiento europeo hasta llegar a la modernidad estadounidense. Valora el individualismo, la democracia, la ciencia y la libertad de expresión, influyendo en gran parte del mundo.",
-    ocidental_trad_sub: "Tradición: Carnaval de Venecia",
-    ocidental_trad_txt: "El Carnaval de Venecia es uno de los festivales más antiguos y elegantes del mundo, caracterizado por elaboradas máscaras y trajes históricos. Celebrado desde el siglo XII, transforma la ciudad en un espectáculo de arte y misterio.",
-    ocidental_culi_sub: "Culinaria: Croissant",
-    ocidental_culi_txt: "El croissant es un símbolo de la panadería francesa, elaborado con hojaldre mantecoso y horneado hasta quedar dorado y crujiente. Aunque tiene su origen en Austria, fue en Francia donde se convirtió en un icono mundial de la gastronomía occidental.",
-    btn_voltar: "← Volver"
-  }
-};
 
 var traducoesChinesa = {
 

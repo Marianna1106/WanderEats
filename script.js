@@ -458,7 +458,7 @@ window.onload = function () {
   .then(([pais, continente, cultura, receita]) => {
 
     injetarComScripts('conteudo-pais', pais);
-    document.getElementById('conteudo-continentes').innerHTML = '<div class="cards">' + continente + '</div>';
+    injetarComScripts('conteudo-continentes', '<div class="cards">' + continente + '</div>');
     injetarComScripts('conteudo-culturas', '<div class="cards">' + cultura + '</div>');
     document.getElementById('conteudo-receita').innerHTML = '<div class="cards">' + receita + '</div>';
 

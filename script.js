@@ -94,6 +94,7 @@ function mudarIdioma(idioma) {
   // Aplica traduções dos arquivos externos se já estiverem carregados
   if (typeof aplicarTraducoesPais === 'function') aplicarTraducoesPais(idioma);
   if (typeof aplicarTraducoes === 'function') aplicarTraducoes(idioma);
+  if (typeof aplicarTraducoesContinente === 'function') aplicarTraducoesContinente(idioma);
 }
 
 // ==========================

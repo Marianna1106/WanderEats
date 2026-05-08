@@ -468,6 +468,7 @@ window.onload = function () {
     const idioma = localStorage.getItem("idioma") || "pt";
     if (typeof aplicarTraducoesPais === 'function') aplicarTraducoesPais(idioma);
     if (typeof aplicarTraducoes === 'function') aplicarTraducoes(idioma);
+    if (typeof aplicarTraducoesContinente === 'function') aplicarTraducoesContinente(idioma);
   });
 
 };

@@ -511,17 +511,24 @@ var todosDicionariosCultura = [
 ];
 
 function aplicarTraducoes(idioma) {
-  var container = document.getElementById('conteudo-culturas') || document;
-  var elementos = container.querySelectorAll('[data-i18n]');
-  elementos.forEach(function(el) {
-    var chave = el.getAttribute('data-i18n');
-    for (var i = 0; i < todosDicionariosCultura.length; i++) {
-      var dic = todosDicionariosCultura[i];
-      if (dic[idioma] && dic[idioma][chave]) {
-        el.innerHTML = dic[idioma][chave];
-        break;
+  var containers = [
+    document.getElementById('conteudo-culturas'),
+    document.getElementById('secao-culturas')
+  ].filter(Boolean);
+  
+  if (containers.length === 0) containers = [document];
+  
+  containers.forEach(function(container) {
+    container.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var chave = el.getAttribute('data-i18n');
+      for (var i = 0; i < todosDicionariosCultura.length; i++) {
+        var dic = todosDicionariosCultura[i];
+        if (dic[idioma] && dic[idioma][chave]) {
+          el.innerHTML = dic[idioma][chave];
+          break;
+        }
       }
-    }
+    });
   });
 }
 

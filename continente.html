@@ -614,17 +614,24 @@ var todosDicionariosContinente = [
 ];
 
 function aplicarTraducoesContinente(idioma) {
-  var container = document.getElementById('conteudo-continentes') || document;
-  var elementos = container.querySelectorAll('[data-i18n]');
-  elementos.forEach(function(el) {
-    var chave = el.getAttribute('data-i18n');
-    for (var i = 0; i < todosDicionariosContinente.length; i++) {
-      var dic = todosDicionariosContinente[i];
-      if (dic[idioma] && dic[idioma][chave]) {
-        el.innerHTML = dic[idioma][chave];
-        break;
+  var containers = [
+    document.getElementById('conteudo-continentes'),
+    document.getElementById('secao-continentes')
+  ].filter(Boolean);
+  
+  if (containers.length === 0) containers = [document];
+  
+  containers.forEach(function(container) {
+    container.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var chave = el.getAttribute('data-i18n');
+      for (var i = 0; i < todosDicionariosContinente.length; i++) {
+        var dic = todosDicionariosContinente[i];
+        if (dic[idioma] && dic[idioma][chave]) {
+          el.innerHTML = dic[idioma][chave];
+          break;
+        }
       }
-    }
+    });
   });
 }
 

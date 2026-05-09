@@ -614,7 +614,8 @@ var todosDicionariosContinente = [
 ];
 
 function aplicarTraducoesContinente(idioma) {
-  var elementos = document.querySelectorAll('[data-i18n]');
+  var container = document.getElementById('conteudo-continentes') || document;
+  var elementos = container.querySelectorAll('[data-i18n]');
   elementos.forEach(function(el) {
     var chave = el.getAttribute('data-i18n');
     for (var i = 0; i < todosDicionariosContinente.length; i++) {

@@ -1164,7 +1164,8 @@
   ];
 
   function aplicarTraducoesPais(idioma) {
-  var elementos = document.querySelectorAll('[data-i18n]');
+    var container = document.getElementById('conteudo-pais') || document;
+    var elementos = container.querySelectorAll('[data-i18n]');
   elementos.forEach(function(el) {
     var chave = el.getAttribute('data-i18n');
     for (var i = 0; i < todosDicionariosPais.length; i++) {

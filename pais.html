@@ -1162,19 +1162,26 @@
     traducoesIndia,
     traducoesNovaZelandia
   ];
-
-  function aplicarTraducoesPais(idioma) {
-    var container = document.getElementById('conteudo-pais') || document;
-    var elementos = container.querySelectorAll('[data-i18n]');
-  elementos.forEach(function(el) {
-    var chave = el.getAttribute('data-i18n');
-    for (var i = 0; i < todosDicionariosPais.length; i++) {
-      var dic = todosDicionariosPais[i];
-      if (dic[idioma] && dic[idioma][chave]) {
-        el.innerText = dic[idioma][chave];
-        break;
+  
+function aplicarTraducoesPais(idioma) {
+  var containers = [
+    document.getElementById('conteudo-pais'),
+    document.getElementById('secao-destinos')
+  ].filter(Boolean);
+  
+  if (containers.length === 0) containers = [document];
+  
+  containers.forEach(function(container) {
+    container.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var chave = el.getAttribute('data-i18n');
+      for (var i = 0; i < todosDicionariosPais.length; i++) {
+        var dic = todosDicionariosPais[i];
+        if (dic[idioma] && dic[idioma][chave]) {
+          el.innerText = dic[idioma][chave];
+          break;
+        }
       }
-    }
+    });
   });
 }
 

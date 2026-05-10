@@ -95,6 +95,7 @@ function mudarIdioma(idioma) {
   if (typeof aplicarTraducoesPais === 'function') aplicarTraducoesPais(idioma);
   if (typeof aplicarTraducoes === 'function') aplicarTraducoes(idioma);
   if (typeof aplicarTraducoesContinente === 'function') aplicarTraducoesContinente(idioma);
+  if (typeof aplicarTraducoesReceita === 'function') aplicarTraducoesReceita(idioma);
 }
 
 // ==========================
@@ -469,6 +470,7 @@ window.onload = function () {
     if (typeof aplicarTraducoesPais === 'function') aplicarTraducoesPais(idioma);
     if (typeof aplicarTraducoes === 'function') aplicarTraducoes(idioma);
     if (typeof aplicarTraducoesContinente === 'function') aplicarTraducoesContinente(idioma);
+    if (typeof aplicarTraducoesReceita === 'function') aplicarTraducoesReceita(idioma);
   });
 
 };

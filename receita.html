@@ -1331,6 +1331,8 @@
 ];
 
 function aplicarTraducoesReceita(idioma) {
+	if (typeof todosDicionariosReceita === 'undefined') return;
+	
   var containers = [
     document.getElementById('conteudo-receita'),
     document.getElementById('secao-receita')

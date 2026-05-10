@@ -460,7 +460,7 @@ window.onload = function () {
     injetarComScripts('conteudo-pais', pais);
     injetarComScripts('conteudo-continentes', '<div class="cards">' + continente + '</div>');
     injetarComScripts('conteudo-culturas', '<div class="cards">' + cultura + '</div>');
-    document.getElementById('conteudo-receita').innerHTML = '<div class="cards">' + receita + '</div>';
+    injetarComScripts('conteudo-receita', '<div class="cards">' + receita + '</div>');
 
     iniciarSliders();
     iniciarGlobo();

@@ -510,6 +510,8 @@ var todosDicionariosCultura = [
 ];
 
 function aplicarTraducoes(idioma) {
+  if (typeof todosDicionariosCultura === 'undefined') return;
+  
   var containers = [
     document.getElementById('conteudo-culturas'),
     document.getElementById('secao-culturas')

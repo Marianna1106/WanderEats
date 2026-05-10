@@ -614,6 +614,8 @@ var todosDicionariosContinente = [
 ];
 
 function aplicarTraducoesContinente(idioma) {
+  if (typeof todosDicionariosContinente === 'undefined') return;
+  
   var containers = [
     document.getElementById('conteudo-continentes'),
     document.getElementById('secao-continentes')

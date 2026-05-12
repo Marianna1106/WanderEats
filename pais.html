@@ -296,7 +296,7 @@
     <p class="modal-texto" data-i18n="eua_culi_txt">A culinária dos EUA é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. nos EUA é um ícone cultural, variando entre fast-food clássico e opções gourmets.</p>
   </div>
   <div class="modal-voltar">
-    <button class="botao" onclick="verReceitas('eua')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+    <button class="botao" onclick="verReceitas('eua')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
     <button class="botao" onclick="fecharModal('eua')" data-i18n="btn_voltar">← Voltar</button>
   </div>
 </div>
@@ -327,7 +327,7 @@
     <p class="modal-texto" data-i18n="aus_culi_txt">A culinária da Austrália é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. na Austrália é um ícone cultural, variando entre fast-food clássico e opções gourmets.</p>
   </div>
   <div class="modal-voltar">
-    <button class="botao" onclick="verReceitas('australia')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+    <button class="botao" onclick="verReceitas('australia')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
     <button class="botao" onclick="fecharModal('australia')" data-i18n="btn_voltar">← Voltar</button>
   </div>
 </div>
@@ -358,7 +358,7 @@
     <p class="modal-texto" data-i18n="fr_culi_txt">Um pão folhado típico, muito consumido no café da manhã.</p>
   </div>
   <div class="modal-voltar">
-    <button class="botao" onclick="verReceitas('franca')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+    <button class="botao" onclick="verReceitas('franca')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
     <button class="botao" onclick="fecharModal('franca')" data-i18n="btn_voltar">← Voltar</button>
   </div>
 </div>
@@ -388,7 +388,7 @@
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('egito')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+      <button class="botao" onclick="verReceitas('egito')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
       <button class="botao" onclick="fecharModal('egito')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
@@ -418,7 +418,7 @@
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('coreia-do-sul')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+      <button class="botao" onclick="verReceitas('coreia-do-sul')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
       <button class="botao" onclick="fecharModal('coreia-do-sul')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
@@ -448,7 +448,7 @@
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('india')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+      <button class="botao" onclick="verReceitas('india')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
       <button class="botao" onclick="fecharModal('india')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
@@ -478,28 +478,14 @@
     </div>
 
     <div class="modal-voltar">
-      <button class="botao" onclick="verReceitas('nova-zelandia')" data-i18n="btn_ver_receitas">🍽️ Ver receitas</button>
+      <button class="botao" onclick="verReceitas('nova-zelandia')" data-i18n="btn_ver_receita">🍽️ Ver receitas</button>
       <button class="botao" onclick="fecharModal('nova-zelandia')" data-i18n="btn_voltar">← Voltar</button>
     </div>
   </div>
 </div>
 
 <script>
-  function abrirModal(pais) {
-  var modal = document.getElementById('modal-' + pais);
-  if (modal) {
-
-    
-    if (!modal.querySelector('header')) {
-      var headerOriginal = document.querySelector('header');
-      var headerClone = headerOriginal.cloneNode(true);
-      modal.insertBefore(headerClone, modal.firstChild);
-    }
-
-    modal.style.display = 'block';
-    window.scrollTo(0, 0);
-  }
-}
+ 
   var traducoesBrasil = {
     pt: {
       //card Brasil
@@ -518,7 +504,7 @@
       br_cristo_txt: "Um dos símbolos mais reconhecidos do mundo, localizado no topo do Morro do Corcovado no Rio de Janeiro, com 38 metros de altura. É uma das Sete Maravilhas do Mundo Moderno e recebe milhões de visitantes todos os anos.",
       br_feij_sub: "Culinária: Feijoada",
       br_feij_txt: "Prato nacional brasileiro, feito com feijão preto e diversos cortes de carne de porco, servido com arroz, couve refogada, farofa e laranja. Tradicional aos sábados, reúne família e amigos em torno da mesa.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
     en: {
@@ -538,7 +524,7 @@
       br_cristo_txt: "One of the most recognized symbols in the world, located atop Corcovado Mountain in Rio de Janeiro, standing 38 meters tall. It is one of the Seven Wonders of the Modern World and receives millions of visitors every year.",
       br_feij_sub: "Cuisine: Feijoada",
       br_feij_txt: "A national Brazilian dish, made with black beans and various cuts of pork, served with rice, sautéed kale, farofa (toasted cassava flour), and orange. Traditionally eaten on Saturdays, it brings family and friends together around the table.",
-      btn_ver_receitas: "See recipes",
+      btn_ver_receita: "See recipes",
       btn_voltar: "← Back"
     },
     es: {
@@ -558,7 +544,7 @@
       br_cristo_txt: "Uno de los símbolos más reconocibles del mundo, ubicado en la cima del monte Corcovado en Río de Janeiro, con 38 metros de altura. Es una de las Siete Maravillas del Mundo Moderno y recibe millones de visitantes cada año.",
       br_feij_sub: "Cocina: Feijoada",
       br_feij_txt: "Un plato típico brasileño, elaborado con frijoles negros y diversos cortes de cerdo, servido con arroz, col rizada salteada, farofa (harina de yuca tostada) y naranja. Tradicionalmente se consume los sábados y reúne a familiares y amigos alrededor de la mesa.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };
@@ -581,7 +567,7 @@
       jp_fuji_txt: "É o pico mais alto e um dos símbolos mais icônicos do Japão. Localizado na ilha de Honshu, próximo a Tóquio, é um vulcão ativo, mas adormecido. É um local de grande beleza, atração turística para escaladas no verão e historicamente um lugar de adoração sagrada.",
       jp_tako_sub: "Culinária: Takoyaki",
       jp_tako_txt: "Popular petisco japonês em formato de bolinhas, recheado com pedaços de polvo, gengibre e cebolinha. Originário de Osaka, é grelhado em chapas especiais, finalizado com molho takoyaki, maionese, aonori e katsuobushi.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
     en: {
@@ -600,7 +586,7 @@
       jp_fuji_txt: "It is the highest peak and one of the most iconic symbols of Japan. Located on the island of Honshu, near Tokyo, it is an active but dormant volcano. It is a place of great beauty, a tourist attraction for climbing in the summer and historically a place of sacred worship.",
       jp_tako_sub: "Cuisine: Takoyaki",
       jp_tako_txt: "A popular Japanese snack in the form of small balls, filled with pieces of octopus, ginger, and scallions. Originating in Osaka, it is grilled on special griddles and finished with takoyaki sauce, mayonnaise, aonori, and katsuobushi.",
-      btn_ver_receitas: "See recipes",
+      btn_ver_receita: "See recipes",
       btn_voltar: "← Back"
     },
     es: {
@@ -619,7 +605,7 @@
       jp_fuji_txt: "Es el pico más alto y uno de los símbolos más icónicos de Japón. Ubicado en la isla de Honshu, cerca de Tokio, es un volcán activo pero dormido. Es un lugar de gran belleza, atracción turística para escalar en verano e históricamente un lugar de adoración sagrada.",
       jp_tako_sub: "Gastronomía: Takoyaki",
       jp_tako_txt: "Un popular aperitivo japonés en forma de bolitas, relleno de trozos de pulpo, jengibre y cebolleta. Originario de Osaka, se asa en planchas especiales y se termina con salsa takoyaki, mayonesa, aonori y katsuobushi.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };
@@ -643,7 +629,7 @@
       cl_colo_txt: "A Colômbia pode ser visitada em qualquer época do ano, pois possui clima tropical com temperaturas relativamente estáveis. No entanto, algumas épocas podem ser mais vantajosas! Sendo as principais épocas para festas: Fevereiro (Carnaval de Barranquilla) e Agosto (Feira das Flores em Medellín).",
       cl_culi_sub: "Culinária da Colômbia",
       cl_culi_txt: "A culinária colombiana é resultado da mistura de culturas indígenas, espanholas e africanas. Os pratos costumam usar ingredientes como milho, arroz, feijão, carnes, batata, banana-da-terra e frutas tropicais. Entre as comidas mais conhecidas estão: Bandeja Paisa, Arepas e Ajiaco.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
      },
 
@@ -665,7 +651,7 @@
       cl_colo_txt: "Colombia can be visited at any time of year, as it has a tropical climate with relatively stable temperatures. However, some times of year may be more advantageous! The main times for festivities are: February (Carnival in Barranquilla) and August (Flower Festival in Medellin",
       cl_culi_sub: "Colombian cuisine",
       cl_culi_txt: "Colombian cuisine is the result of a blend of indigenous, Spanish, and African cultures. Dishes typically use ingredients such as corn, rice, beans, meats, potatoes, plantains, and tropical fruits. Among the best-known dishes are: Bandeja Paisa, Arepas, and Ajiaco.",
-      btn_ver_receitas: "See recipes",
+      btn_ver_receita: "See recipes",
       btn_voltar: "← Back"
      },
 
@@ -687,7 +673,7 @@
       cl_colo_txt: "Colombia se puede visitar en cualquier época del año, ya que cuenta con un clima tropical con temperaturas relativamente estables. Sin embargo, ¡algunas épocas son más recomendables! Las principales temporadas de festivales son: febrero (Carnaval de Barranquilla) y agosto (Festival de las Flores de Medellín).", 
       cl_culi_sub: "Cocina colombiana",
       cl_culi_txt: "La gastronomía colombiana es el resultado de la fusión de las culturas indígena, española y africana. Sus platos suelen utilizar ingredientes como maíz, arroz, frijoles, carnes, papas, plátanos y frutas tropicales. Entre los platos más conocidos se encuentran la Bandeja Paisa, las Arepas y el Ajiaco.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
      }
   };
@@ -711,7 +697,7 @@
       eua_cult_txt: "Os Estados Unidos possuem uma cultura diversa, formada pela mistura de diferentes povos e tradições do mundo todo. O país é uma grande influência global em áreas como música, cinema e tecnologia, além de valorizar o individualismo, a inovação e o entretenimento.",
       eua_culi_sub: "Culinária dos EUA",
       eua_culi_txt: "A culinária dos EUA é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. nos EUA é um ícone cultural, variando entre fast-food clássico e opções gourmets.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
 
@@ -733,7 +719,7 @@
       eua_cult_txt: "The United States has a diverse culture, formed by the mixture of different peoples and traditions from around the world. The country is a major global influence in areas such as music, film, and technology, and values ​​individualism, innovation, and entertainment.",
       eua_culi_sub: "US cuisine",
       eua_culi_txt: "American cuisine is the result of a blend of Indigenous, European, and African cultures. One of the most popular foods in the country, consumed in various versions, is fast food in the US, a cultural icon ranging from classic fast food to gourmet options.",
-      btn_ver_receitas: "View recipes",
+      btn_ver_receita: "View recipes",
       btn_voltar: "← Back"
     },
 
@@ -755,7 +741,7 @@
       eua_cult_txt: "Estados Unidos posee una cultura diversa, formada por la mezcla de diferentes pueblos y tradiciones de todo el mundo. El país ejerce una gran influencia global en áreas como la música, el cine y la tecnología, y valora el individualismo, la innovación y el entretenimiento.",
       eua_culi_sub: "cocina estadounidense",
       eua_culi_txt: "La gastronomía estadounidense es el resultado de la fusión de culturas indígenas, europeas y africanas. Uno de los alimentos más populares del país, consumido en diversas versiones, es la comida rápida en Estados Unidos, un ícono cultural que abarca desde la comida rápida clásica hasta opciones gourmet.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };
@@ -780,7 +766,7 @@
       aus_cult_txt: "A cultura australiana é formada pela união das tradições dos povos aborígenes com a influência britânica. Os australianos valorizam um estilo de vida descontraído, com forte ligação com a natureza, praias e esportes ao ar livre. A sociedade é multicultural e bastante receptiva a diferentes culturas.",
       aus_culi_sub: "Culinária da Austrália",
       aus_culi_txt: "A culinária da Austrália é resultado da mistura de culturas indígenas, europeias e africanas. Um dos alimentos mais populares do país, consumido em diversas versões. na Austrália é um ícone cultural, variando entre fast-food clássico e opções gourmets.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
 
@@ -802,7 +788,7 @@
       aus_cult_txt: "Australian culture is formed by the union of Aboriginal traditions with British influence. Australians value a relaxed lifestyle, with a strong connection to nature, beaches, and outdoor sports. The society is multicultural and very receptive to different cultures.",
       aus_culi_sub: "Australian cuisine",
       aus_culi_txt: "Australian cuisine is a result of the blending of Indigenous, European, and African cultures. One of the country's most popular foods, consumed in diverse versions, is fast food, a cultural icon in Australia, ranging from classic fast food to gourmet options.",
-      btn_ver_receitas: "View recipes",
+      btn_ver_receita: "View recipes",
       btn_voltar: "← Back"
     },
 
@@ -824,7 +810,7 @@
       aus_cult_txt: "La cultura australiana se forja a partir de la fusión de las tradiciones aborígenes con la influencia británica. Los australianos valoran un estilo de vida relajado, con una fuerte conexión con la naturaleza, las playas y los deportes al aire libre. La sociedad es multicultural y muy receptiva a las diferentes culturas.",
       aus_culi_sub: "Cocina australiana",
       aus_culi_txt: "La gastronomía australiana es el resultado de la fusión de las culturas indígena, europea y africana. Uno de los platos más populares del país, que se consume en diversas versiones, es la comida rápida, un ícono cultural en Australia, que abarca desde la comida rápida clásica hasta opciones gourmet.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };
@@ -849,7 +835,7 @@
       fr_cult_txt: "A França é referência mundial em arte, moda e gastronomia. O país valoriza a estética, a tradição e o estilo de vida refinado. Movimentos artísticos e intelectuais, como o Iluminismo, tiveram grande influência global, reforçando o papel da França na história cultural do mundo.",
       fr_culi_sub: "Culinária da França",
       fr_culi_txt: "Um pão folhado típico, muito consumido no café da manhã.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
 
@@ -871,7 +857,7 @@
       fr_cult_txt: "France is a world reference in art, fashion, and gastronomy. The country values ​​aesthetics, tradition, and a refined lifestyle. Artistic and intellectual movements, such as the Enlightenment, have had a great global influence, reinforcing France's role in the world's cultural history.",
       fr_culi_sub: "French cuisine",
       fr_culi_txt: "A typical flaky bread, commonly eaten for breakfast.",
-      btn_ver_receitas: "View recipes",
+      btn_ver_receita: "View recipes",
       btn_voltar: "← Back"
     },
 
@@ -893,7 +879,7 @@
       fr_cult_txt: "Francia es un referente mundial en arte, moda y gastronomía. El país valora la estética, la tradición y un estilo de vida refinado. Movimientos artísticos e intelectuales, como la Ilustración, han tenido una gran influencia global, reforzando el papel de Francia en la historia cultural mundial.",
       fr_culi_sub: "Cocina francesa",
       fr_culi_txt: "Un pan hojaldrado típico, que se suele comer en el desayuno.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };
@@ -916,7 +902,7 @@
       egp_gize_txt: "Construídas há mais de 4.500 anos, são uma das maiores realizações da engenharia da antiguidade e serviam como tumbas para os faraós.",
       egp_culi_sub: "Culinária: Koshari",
       egp_culi_txt: "Prato tradicional feito com arroz, macarrão e lentilhas. é o prato nacional do Egito e uma das comidas de rua mais populares e amadas do país.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
 
@@ -936,7 +922,7 @@
       egp_gize_txt: "Built over 4,500 years ago, they are one of the greatest engineering achievements of antiquity and served as tombs for the pharaohs.",
       egp_culi_sub: "Cuisine: Koshari",
       egp_culi_txt: "A traditional dish made with rice, noodles, and lentils. It is the national dish of Egypt and one of the most popular and beloved street foods in the country.",
-      btn_ver_receitas: "View recipes",
+      btn_ver_receita: "View recipes",
       btn_voltar: "← Back"
     },
 
@@ -956,7 +942,7 @@
       egp_gize_txt: "Construidas hace más de 4.500 años, son uno de los mayores logros de la ingeniería de la antigüedad y sirvieron como tumbas para los faraones.",
       egp_culi_sub: "Cocina: Koshari",
       egp_culi_txt: "Un plato tradicional elaborado con arroz, fideos y lentejas. Es el plato nacional de Egipto y una de las comidas callejeras más populares y apreciadas del país.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };
@@ -979,7 +965,7 @@
       cor_gyeo_txt: "É o maior e principal palácio real da dinastia Joseon, localizado em Seul. Com sua arquitetura imponente e jardins vastos, é um símbolo da história coreana. É comum ver turistas e locais vestindo Hanbok (roupa tradicional) para explorar seus pavilhões e assistir à troca da guarda real.",
       cor_culi_sub: "Culinária: Kimchi",
       cor_culi_txt: "Kimchi é um alimento fermentado coreano, feito principalmente com repolho, cenoura e pimenta. É uma parte essencial da dieta coreana e é conhecido por seus benefícios para a saúde digestiva.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
 
@@ -999,7 +985,7 @@
       cor_gyeo_txt: "It is the largest and most important royal palace of the Joseon Dynasty, located in Seoul. With its imposing architecture and vast gardens, it is a symbol of Korean history. It is common to see tourists and locals wearing Hanbok (traditional clothing) exploring its pavilions and watching the changing of the royal guard.",
       cor_culi_sub: "Cuisine: Kimchi",
       cor_culi_txt: "Kimchi is a Korean fermented food, made primarily with cabbage, carrots, and chili peppers. It is an essential part of the Korean diet and is known for its digestive health benefits.",
-      btn_ver_receitas: "View recipes",
+      btn_ver_receita: "View recipes",
       btn_voltar: "← Back"
     },
 
@@ -1019,7 +1005,7 @@
       cor_gyeo_txt: "Es el palacio real más grande e importante de la dinastía Joseon, ubicado en Seúl. Con su imponente arquitectura y sus extensos jardines, es un símbolo de la historia de Corea. Es común ver a turistas y lugareños vestidos con hanbok (traje tradicional coreano) explorando sus pabellones y presenciando el cambio de guardia real.",
       cor_culi_sub: "Cocina: kimchi",
       cor_culi_txt: "El kimchi es un alimento fermentado coreano, elaborado principalmente con repollo, zanahorias y chiles. Es un componente esencial de la dieta coreana y es conocido por sus beneficios para la salud digestiva.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };
@@ -1042,7 +1028,7 @@
       ind_taj_txt: "Situado em Agra, este mausoléu de mármore branco é considerado a maior  prova de amor do mundo, construído pelo imperador Shah Jahan em memória de sua esposa. É uma obra-prima da arquitetura mogol, reconhecida mundialmente por sua simetria perfeita e detalhes em pedras semipreciosas.",
       ind_culi_sub: "Culinária: Frango Tikka Masala",
       ind_culi_txt: "Frango Tikka Masala é um prato indiano popular, feito com pedaços de frango grelhado em uma salsa cremosa e especiada. É conhecido por sua combinação de sabores picantes e ricos.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
 
@@ -1062,7 +1048,7 @@
       ind_taj_txt: "Located in Agra, this white marble mausoleum is considered the greatest testament to love in the world, built by Emperor Shah Jahan in memory of his wife. It is a masterpiece of Mughal architecture, recognized worldwide for its perfect symmetry and details in semi-precious stones.",
       ind_culi_sub: "Cuisine: Chicken Tikka Masala",
       ind_culi_txt: "Chicken Tikka Masala is a popular Indian dish made with pieces of grilled chicken in a creamy, spiced sauce. It is known for its combination of spicy and rich flavors.",
-      btn_ver_receitas: "View recipes",
+      btn_ver_receita: "View recipes",
       btn_voltar: "← Back"
     },
 
@@ -1082,7 +1068,7 @@
       ind_taj_txt: "Ubicado en Agra, este mausoleo de mármol blanco es considerado el mayor testimonio de amor del mundo, construido por el emperador Shah Jahan en memoria de su esposa. Es una obra maestra de la arquitectura mogol, reconocida mundialmente por su perfecta simetría y sus detalles en piedras semipreciosas.",
       ind_culi_sub: "Cocina: Pollo Tikka Masala",
       ind_culi_txt: "El pollo tikka masala es un plato indio muy popular, elaborado con trozos de pollo a la parrilla en una salsa cremosa y especiada. Se caracteriza por su combinación de sabores intensos y picantes.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };
@@ -1105,7 +1091,7 @@
       nvze_mil_txt: "Localizado na Ilha do Sul, é um fiorde esculpido por geleiras, descrito por Rudyard Kipling como a oitava maravilha do mundo. É cercado por falésias íngremes e cachoeiras que jorram centenas de metros abaixo, sendo o destino principal para passeios de barco e amantes da natureza selvagem.",
       nvze_culi_sub: "Culinária: Pavlova",
       nvze_culi_txt: "A Pavlova é um doce australiano/novozelandês, feito com meringue recheado com creme de leite e frutas frescas. É conhecida por sua textura crocante por fora e macia por dentro, sendo um prato popular em ocasiões especiais e festas.",
-      btn_ver_receitas: "Ver receitas",
+      btn_ver_receita: "Ver receitas",
       btn_voltar: "← Voltar"
     },
 
@@ -1125,7 +1111,7 @@
       nvze_mil_txt: "Located on the South Island, it is a fjord carved by glaciers, described by Rudyard Kipling as the eighth wonder of the world. It is surrounded by steep cliffs and waterfalls that cascade hundreds of meters below, making it a prime destination for boat trips and wildlife enthusiasts.",
       nvze_culi_sub: "Culinary: Pavlova",
       nvze_culi_txt: "Pavlova is an Australian/New Zealand dessert made with meringue filled with sour cream and fresh fruit. It is known for its crisp exterior and soft interior, making it a popular dish for special occasions and celebrations.",
-      btn_ver_receitas: "View recipes",
+      btn_ver_receita: "View recipes",
       btn_voltar: "← Back"
     },
 
@@ -1145,7 +1131,7 @@
       nvze_mil_txt: "Situado en la Isla Sur, este fiordo, esculpido por glaciares, fue descrito por Rudyard Kipling como la octava maravilla del mundo. Rodeado de escarpados acantilados y cascadas que caen cientos de metros, es un destino ideal para paseos en barco y para los amantes de la naturaleza.",
       nvze_culi_sub: "Culinaria: Pavlova",
       nvze_culi_txt: "La pavlova es un postre australiano/neozelandés elaborado con merengue relleno de crema agria y fruta fresca. Se caracteriza por su exterior crujiente y su interior suave, lo que la convierte en un plato popular para ocasiones especiales y celebraciones.",
-      btn_ver_receitas: "Ver recetas",
+      btn_ver_receita: "Ver recetas",
       btn_voltar: "← Volver"
     }
   };

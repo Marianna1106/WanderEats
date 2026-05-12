@@ -920,3 +920,20 @@ header {
   padding: 5px;
   border-radius: 6px;
 }
+
+.modal-conteudo {
+  text-align: center;
+}
+
+.modal-bloco {
+  text-align: left;
+}
+
+.modal-texto {
+  text-align: left;
+}
+
+.modal-titulo,
+.modal-subtitulo {
+  text-align: center;
+}

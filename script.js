@@ -86,15 +86,14 @@ function mudarIdioma(idioma) {
   set('titulo', t.titulo);
   set('busca', t.placeholder, "placeholder");
   set('botaoBusca', t.botao);
-  set('menuPais', t.menuPais);
-  set('menuContinente', t.menuContinente);
-  set('menuCultura', t.menuCultura);
-  set('menuReceita', t.menuReceita);
 
-  document.querySelectorAll('[data-i18n="menuPais"]').forEach(el => el.textContent = t.menuPais);
-  document.querySelectorAll('[data-i18n="menuContinente"]').forEach(el => el.textContent = t.menuContinente);
-  document.querySelectorAll('[data-i18n="menuCultura"]').forEach(el => el.textContent = t.menuCultura);
-  document.querySelectorAll('[data-i18n="menuReceita"]').forEach(el => el.textContent = t.menuReceita);
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const chave = el.dataset.i18n;
+
+    if (t[chave]) {
+      el.textContent = t[chave];
+    }
+  });
 
   // Aplica traduções dos arquivos externos se já estiverem carregados
   if (typeof aplicarTraducoesPais === 'function') aplicarTraducoesPais(idioma);

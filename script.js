@@ -54,7 +54,20 @@ function mudarIdioma(idioma) {
       menuPais: "País",
       menuContinente: "Continente",
       menuCultura: "Cultura",
-      menuReceita: "Receitas"
+      menuReceita: "Receitas",
+      
+      paisesMaisViajados: "Países mais viajados", 
+      paises: "Países", 
+      destinosVisitados: "Os destinos mais visitados",
+      destinosPopulares: "Destinos Populares",
+      continentes: "Continentes",
+      continente: "Continente", 
+      maisViajados: "Mais Viajados", 
+      destinosContinente: "Destinos por Continente", 
+      conhecaCulturas: "Conheça as Culturas",
+      receitas: "Receitas",
+      viajeCasa: "Viaje sem sair de casa",
+      experimente: "Experimente"
     },
     en: {
       titulo: "Where do you want to travel?",
@@ -63,7 +76,20 @@ function mudarIdioma(idioma) {
       menuPais: "Country",
       menuContinente: "Continent",
       menuCultura: "Culture",
-      menuReceita: "Recipes"
+      menuReceita: "Recipes",
+
+      paisesMaisViajados: "Most Traveled Countries",
+      paises: "Countries", 
+      destinosVisitados: "The most visited destinations",
+      destinosPopulares: "Popular Destinations",
+      continentes: "Continents",
+      continente: "Continent",
+      maisViajados: "Most traveled",
+      destinosContinente: "Destinations by Continent",
+      conhecaCulturas: "Discover Cultures",
+      receitas: "Recipes",
+      viajeCasa: "Travel without leaving home",
+      experimente: "Try It"
     },
     es: {
       titulo: "¿A dónde quieres viajar?",
@@ -72,7 +98,20 @@ function mudarIdioma(idioma) {
       menuPais: "País",
       menuContinente: "Continente",
       menuCultura: "Cultura",
-      menuReceita: "Recetas"
+      menuReceita: "Recetas",
+
+      paisesMaisViajados: "Países más visitados",
+      paises: "Países", 
+      destinosVisitados: "Los destinos más visitados",
+      destinosPopulares: "Destinos Populares",
+      continentes: "Continentes",
+      continente: "Continente",
+      maisViajados: "Más visitados",
+      destinosContinente: "Destinos por Continente",
+      conhecaCulturas: "Conoce las Culturas",
+      receitas: "Recetas",
+      viajeCasa: "Viaja sin salir de casa",
+      experimente: "Prueba"
     }
   };
 

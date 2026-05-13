@@ -91,6 +91,11 @@ function mudarIdioma(idioma) {
   set('menuCultura', t.menuCultura);
   set('menuReceita', t.menuReceita);
 
+  document.querySelectorAll('[data-i18n="menuPais"]').forEach(el => el.textContent = t.menuPais);
+  document.querySelectorAll('[data-i18n="menuContinente"]').forEach(el => el.textContent = t.menuContinente);
+  document.querySelectorAll('[data-i18n="menuCultura"]').forEach(el => el.textContent = t.menuCultura);
+  document.querySelectorAll('[data-i18n="menuReceita"]').forEach(el => el.textContent = t.menuReceita);
+
   // Aplica traduções dos arquivos externos se já estiverem carregados
   if (typeof aplicarTraducoesPais === 'function') aplicarTraducoesPais(idioma);
   if (typeof aplicarTraducoes === 'function') aplicarTraducoes(idioma);

@@ -57,7 +57,7 @@ function mudarIdioma(idioma) {
       menuReceita: "Receitas",
 
       sobreNos: "Sobre Nós",
-      wander: "O <strong>WanderEats</strong> é um projeto acadêmico desenvolvido para conectar pessoas através da cultura, viagens e gastronomia.",
+      wander: "O WanderEats é um projeto acadêmico desenvolvido para conectar pessoas através da cultura, viagens e gastronomia.",
       objetivo: "Nosso objetivo é proporcionar uma experiência interativa onde você pode explorar países, conhecer culturas e experimentar receitas típicas.", 
       desenvolvido: "Desenvolvido por estudantes de Ciência da Computação — UNIP.", 
       quemSomos: "Quem Somos",

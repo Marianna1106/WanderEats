@@ -57,7 +57,7 @@ function mudarIdioma(idioma) {
       menuReceita: "Receitas",
 
       sobreNos: "Sobre Nós",
-      wander: "O WanderEats é um projeto acadêmico desenvolvido para conectar pessoas através da cultura, viagens e gastronomia.",
+      Wander: "O <strong>WanderEats</strong> é um projeto acadêmico desenvolvido para conectar pessoas através da cultura, viagens e gastronomia.",
       objetivo: "Nosso objetivo é proporcionar uma experiência interativa onde você pode explorar países, conhecer culturas e experimentar receitas típicas.", 
       desenvolvido: "Desenvolvido por estudantes de Ciência da Computação — UNIP.", 
       quemSomos: "Quem Somos",
@@ -96,7 +96,7 @@ function mudarIdioma(idioma) {
       menuReceita: "Recipes",
 
       sobreNos: "About Us",
-      wander: "The WanderEats is an academic project developed to connect people through culture, travel, and gastronomy.",
+      Wander: "The <strong>WanderEats</strong> is an academic project developed to connect people through culture, travel, and gastronomy.",
       objetivo: "Our goal is to provide an interactive experience where you can explore countries, learn about cultures, and try typical recipes.", 
       desenvolvido: "Developed by Computer Science students — UNIP.", 
       quemSomos: "Who We Are",
@@ -135,7 +135,7 @@ function mudarIdioma(idioma) {
       menuReceita: "Recetas",
 
       sobreNos: "Sobre Nosotros",
-      wander: "El WanderEats es un proyecto académico desarrollado para conectar personas a través de la cultura, los viajes y la gastronomía",
+      Wander: "El <strong>WanderEats</strong> es un proyecto académico desarrollado para conectar personas a través de la cultura, los viajes y la gastronomía",
       objetivo: "Nuestro objetivo es proporcionar una experiencia interactiva donde usted puede explorar países, conocer culturas y experimentar recetas típicas.", 
       desenvolvido: "Desarrollado por estudiantes de Ciencias de la Computación — UNIP", 
       quemSomos: "Quiénes Somos",

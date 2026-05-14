@@ -55,6 +55,14 @@ function mudarIdioma(idioma) {
       menuContinente: "Continente",
       menuCultura: "Cultura",
       menuReceita: "Receitas",
+
+      sobreNos: "Sobre Nós",
+      wander: "",
+      objetivo: "", 
+      desenvolvido: "", 
+      quemSomos: "",
+      desenvolvimento: "",
+      informacoes: "",
       
       paisesMaisViajados: "Países mais viajados", 
       paises: "Países", 
@@ -79,6 +87,14 @@ function mudarIdioma(idioma) {
       menuCultura: "Culture",
       menuReceita: "Recipes",
 
+      sobreNos: "Sobre Nós",
+      wander: "",
+      objetivo: "", 
+      desenvolvido: "", 
+      quemSomos: "",
+      desenvolvimento: "",
+      informacoes: "",
+      
       paisesMaisViajados: "Most Traveled Countries",
       paises: "Countries", 
       destinosVisitados: "The most visited destinations",
@@ -102,6 +118,14 @@ function mudarIdioma(idioma) {
       menuCultura: "Cultura",
       menuReceita: "Recetas",
 
+      sobreNos: "Sobre Nós",
+      wander: "",
+      objetivo: "", 
+      desenvolvido: "", 
+      quemSomos: "",
+      desenvolvimento: "",
+      informacoes: "",
+      
       paisesMaisViajados: "Países más visitados",
       paises: "Países", 
       destinosVisitados: "Los destinos más visitados",

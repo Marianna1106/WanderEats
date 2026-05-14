@@ -84,7 +84,7 @@ function mudarIdioma(idioma) {
       footer_projeto: "Projeto acadêmico - UNIP",
       footer_sobre: "Sobre Nós",
       footer_quem: "Quem Somos",
-      footer_bottom: 
+      footer_bottom: "© 2026 WanderEats — Todos os direitos reservados"
     },
     en: {
       titulo: "Where do you want to travel?",
@@ -122,7 +122,8 @@ function mudarIdioma(idioma) {
       footer_contato: "Contact",
       footer_projeto: "Academic project - UNIP",
       footer_sobre: "About Us",
-      footer_quem: "Who We Are"
+      footer_quem: "Who We Are",
+      footer_bottom: "© 2026 WanderEats — All rights reserved"
     },
     es: {
       titulo: "¿A dónde quieres viajar?",
@@ -160,7 +161,8 @@ function mudarIdioma(idioma) {
       footer_contato: "Contacto",
       footer_projeto: "Proyecto académico - UNIP",
       footer_sobre: "Sobre Nosotros",
-      footer_quem: "Quiénes Somos"
+      footer_quem: "Quiénes Somos",
+      footer_bottom: "© 2026 WanderEats — Todos los derechos reservados"
     }
   };
 

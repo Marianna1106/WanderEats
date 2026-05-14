@@ -66,6 +66,7 @@ function mudarIdioma(idioma) {
       destinosContinente: "Destinos por Continente", 
       conhecaCulturas: "Conheça as Culturas",
       receitas: "Receitas",
+      receita: "Receita",
       viajeCasa: "Viaje sem sair de casa",
       experimente: "Experimente"
     },
@@ -88,6 +89,7 @@ function mudarIdioma(idioma) {
       destinosContinente: "Destinations by Continent",
       conhecaCulturas: "Discover Cultures",
       receitas: "Recipes",
+      receita: "Recipe", 
       viajeCasa: "Travel without leaving home",
       experimente: "Try It"
     },
@@ -110,6 +112,7 @@ function mudarIdioma(idioma) {
       destinosContinente: "Destinos por Continente",
       conhecaCulturas: "Conoce las Culturas",
       receitas: "Recetas",
+      receita: "Receta",
       viajeCasa: "Viaja sin salir de casa",
       experimente: "Prueba"
     }

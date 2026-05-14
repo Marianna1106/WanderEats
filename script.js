@@ -83,7 +83,8 @@ function mudarIdioma(idioma) {
       footer_contato: "Contato",
       footer_projeto: "Projeto acadêmico - UNIP",
       footer_sobre: "Sobre Nós",
-      footer_quem: "Quem Somos"
+      footer_quem: "Quem Somos",
+      footer_bottom: 
     },
     en: {
       titulo: "Where do you want to travel?",

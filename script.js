@@ -76,7 +76,14 @@ function mudarIdioma(idioma) {
       receitas: "Receitas",
       receita: "Receita",
       viajeCasa: "Viaje sem sair de casa",
-      experimente: "Experimente"
+      experimente: "Experimente",
+
+      footer_desc: "Explore o mundo através da cultura e da gastronomia.",
+      footer_nav: "Navegação",
+      footer_contato: "Contato",
+      footer_projeto: "Projeto acadêmico - UNIP",
+      footer_sobre: "Sobre Nós",
+      footer_quem: "Quem Somos"
     },
     en: {
       titulo: "Where do you want to travel?",
@@ -107,7 +114,14 @@ function mudarIdioma(idioma) {
       receitas: "Recipes",
       receita: "Recipe", 
       viajeCasa: "Travel without leaving home",
-      experimente: "Try It"
+      experimente: "Try It",
+
+      footer_desc: "Explore the world through culture and gastronomy.",
+      footer_nav: "Navigation",
+      footer_contato: "Contact",
+      footer_projeto: "Academic project - UNIP",
+      footer_sobre: "About Us",
+      footer_quem: "Who We Are"
     },
     es: {
       titulo: "¿A dónde quieres viajar?",
@@ -138,7 +152,14 @@ function mudarIdioma(idioma) {
       receitas: "Recetas",
       receita: "Receta",
       viajeCasa: "Viaja sin salir de casa",
-      experimente: "Prueba"
+      experimente: "Prueba",
+
+      footer_desc: "Explora el mundo a través de la cultura y la gastronomía.",
+      footer_nav: "Navegación",
+      footer_contato: "Contacto",
+      footer_projeto: "Proyecto académico - UNIP",
+      footer_sobre: "Sobre Nosotros",
+      footer_quem: "Quiénes Somos"
     }
   };
 
